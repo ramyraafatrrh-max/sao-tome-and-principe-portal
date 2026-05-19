@@ -1,38 +1,35 @@
 {
   "number": 2,
   "title": "PESTEL Analysis",
-  "slug": "chapter-2-pestel",
   "sections": [
     {
       "number": "2.1",
       "title": "Political",
-      "slug": "2-1-political",
-      "content": "",
       "subsections": [
         {
           "number": "2.1.1",
-          "title": "Government Structure",
-          "content": "São Tomé and Príncipe operates a semi-presidential multi-party democratic system. The President is elected for two five-year terms, while the Prime Minister, appointed by the President, holds most executive powers. Governments are often short-lived due to coalition politics. Civil liberties are generally respected, though institutional weaknesses and corruption affect governance."
+          "title": "Government",
+          "content": "São Tomé and Príncipe operates a presidential-parliamentary democracy. The President is elected for two 5-year terms, while the Prime Minister holds most executive powers. Governments are often unstable due to coalition systems, and institutions face challenges from corruption and limited efficiency."
         },
         {
           "number": "2.1.2",
-          "title": "Trade Environment",
-          "content": "The country is not yet a member of the WTO, limiting its integration into global trade systems. Trade is highly concentrated with Europe, particularly Portugal. Imports significantly exceed exports, creating a persistent trade deficit. The economy depends heavily on imported goods and a narrow export base focused on cocoa."
+          "title": "Trade",
+          "content": "The country is not a WTO member, limiting global trade integration. Trade is heavily dependent on Europe, especially Portugal. Imports significantly exceed exports, creating a large trade deficit and reliance on external goods."
         },
         {
           "number": "2.1.3",
           "title": "Tax Policies",
-          "content": "São Tomé and Príncipe has a developing tax system with a 10% VAT and progressive income tax rates up to 25%. While tax incentives exist for investors, weak administrative capacity and a large informal sector reduce tax efficiency."
+          "content": "The tax system includes a 10% VAT and progressive income tax up to 25%. Although structured, enforcement is weak due to administrative limitations and a large informal sector."
         },
         {
           "number": "2.1.4",
-          "title": "Political Challenges",
-          "content": "The country faces governance challenges including limited transparency, weak enforcement of laws, corruption, and a large informal sector. Media independence is constrained and access to public information is limited."
+          "title": "Political Issues",
+          "content": "Key issues include weak transparency, corruption, limited media independence, and difficulties accessing public information. Enforcement of labor laws and regulations remains weak."
         },
         {
           "number": "2.1.5",
-          "title": "Political Stability",
-          "content": "Despite past instability, the country has experienced peaceful democratic transitions. However, coalition governments and institutional capacity issues continue to pose risks."
+          "title": "Political Trends",
+          "content": "The country has a stable democratic system with peaceful transitions of power. However, institutional weaknesses and political fragmentation continue to affect governance."
         }
       ]
     },
@@ -40,33 +37,31 @@
     {
       "number": "2.2",
       "title": "Economic",
-      "slug": "2-2-economic",
-      "content": "",
       "subsections": [
         {
           "number": "2.2.1",
           "title": "Inflation",
-          "content": "Inflation remains relatively high but is declining, reaching around 9–10% in 2026. Historically, inflation has been volatile, affecting purchasing power and economic stability."
+          "content": "Inflation is relatively high but declining, reaching around 9–10% in 2026. Historically, it has been volatile, affecting purchasing power."
         },
         {
           "number": "2.2.2",
           "title": "Interest Rate",
-          "content": "Interest rates are relatively high at around 10%, reflecting efforts to control inflation. However, this limits access to financing and reduces private sector investment."
+          "content": "Interest rates average around 10%, reflecting inflation control policies. High rates limit borrowing and private investment."
         },
         {
           "number": "2.2.3",
           "title": "Exchange Rate",
-          "content": "The local currency (STN) is pegged to the euro, providing monetary stability but limiting policy flexibility. The economy relies heavily on foreign reserves."
+          "content": "The local currency is pegged to the euro, which stabilizes prices but limits monetary flexibility and increases dependence on foreign reserves."
         },
         {
           "number": "2.2.4",
           "title": "Economic Growth",
-          "content": "Economic growth remains modest (around 1.7%) and below historical averages. The economy is small and heavily dependent on agriculture, tourism, and foreign aid."
+          "content": "Growth is modest (~1.7%), with heavy reliance on agriculture, tourism, and foreign aid. The economy is vulnerable to external shocks."
         },
         {
           "number": "2.2.5",
           "title": "Unemployment",
-          "content": "Unemployment averages around 9–10%, but a large informal sector dominates the labor market, reducing job stability and productivity."
+          "content": "Unemployment is around 9–10%, but a large informal sector dominates employment, reducing job security and productivity."
         }
       ]
     },
@@ -74,38 +69,31 @@
     {
       "number": "2.3",
       "title": "Social",
-      "slug": "2-3-social",
-      "content": "",
       "subsections": [
         {
           "number": "2.3.1",
           "title": "Demographics",
-          "content": "The population is approximately 247,000, with steady annual growth of about 2%. The country has a young and expanding population."
+          "content": "Population is حوالي 247,000 with steady growth. The country has a young population and high dependency on working-age individuals."
         },
         {
           "number": "2.3.2",
-          "title": "Population Structure",
-          "content": "Around 38–42% of the population is under 15 years old, indicating a high dependency ratio and strong demand for education and employment opportunities."
+          "title": "Lifestyle",
+          "content": "The culture follows a 'Leve Leve' relaxed lifestyle focused on community and simplicity, influenced by African and Portuguese traditions."
         },
         {
           "number": "2.3.3",
-          "title": "Culture and Lifestyle",
-          "content": "The country follows a relaxed 'Leve Leve' lifestyle, emphasizing simplicity and community. Culture is influenced by African and Portuguese traditions."
+          "title": "Education",
+          "content": "Primary enrollment is high and literacy rates are improving, but challenges remain in quality and secondary education completion."
         },
         {
           "number": "2.3.4",
-          "title": "Education",
-          "content": "Primary education enrollment is high, and literacy rates have improved. However, challenges remain in secondary education completion and overall quality."
+          "title": "Consumer Behavior",
+          "content": "Consumers focus on essential goods due to limited income. Informal markets dominate, and the country relies heavily on imported products."
         },
         {
           "number": "2.3.5",
-          "title": "Consumer Behavior",
-          "content": "Consumers prioritize essential goods due to low income levels and high reliance on imports. Informal markets dominate purchasing habits."
-        },
-        {
-          "number": "2.3.6",
           "title": "Healthcare",
-          "content": "Healthcare infrastructure is limited, with only one main hospital. Patients often travel abroad for advanced treatment."
+          "content": "Healthcare infrastructure is limited. There is only one major hospital, and advanced treatment often requires travel abroad."
         }
       ]
     },
@@ -113,28 +101,21 @@
     {
       "number": "2.4",
       "title": "Technological",
-      "slug": "2-4-technological",
-      "content": "",
       "subsections": [
         {
           "number": "2.4.1",
-          "title": "Technology in Education",
-          "content": "Technology adoption in education is limited but improving through international initiatives and digital learning programs."
+          "title": "Education Technology",
+          "content": "Technology use in schools is limited but improving through international programs and digital learning initiatives."
         },
         {
           "number": "2.4.2",
-          "title": "Infrastructure Challenges",
-          "content": "The country faces limited internet access, lack of devices, and insufficient ICT training for teachers."
+          "title": "Challenges",
+          "content": "Challenges include weak infrastructure, limited internet access, lack of devices, and insufficient teacher training."
         },
         {
           "number": "2.4.3",
           "title": "Digital Adoption",
-          "content": "Mobile penetration is relatively strong, with over 60% of the population connected. Internet usage is growing but remains uneven across regions."
-        },
-        {
-          "number": "2.4.4",
-          "title": "Digital Limitations",
-          "content": "Digital infrastructure remains weak, especially in rural areas, limiting full participation in the digital economy."
+          "content": "Mobile penetration is growing (~60%+). Internet usage is increasing but uneven, especially between urban and rural areas."
         }
       ]
     },
@@ -142,23 +123,21 @@
     {
       "number": "2.5",
       "title": "Environmental",
-      "slug": "2-5-environmental",
-      "content": "",
       "subsections": [
         {
           "number": "2.5.1",
-          "title": "Environmental Overview",
-          "content": "São Tomé and Príncipe is a small island developing state vulnerable to climate change, coastal erosion, and environmental degradation."
+          "title": "Overview",
+          "content": "The country is vulnerable to climate change due to its small island geography."
         },
         {
           "number": "2.5.2",
           "title": "Climate Risks",
-          "content": "The country faces sea-level rise, flooding, and extreme weather events, which impact agriculture, infrastructure, and livelihoods."
+          "content": "Key risks include floods, coastal erosion, and sea-level rise that impact agriculture and infrastructure."
         },
         {
           "number": "2.5.3",
-          "title": "Adaptation Efforts",
-          "content": "Government and international partners are implementing coastal protection, flood management, and climate-resilient infrastructure projects."
+          "title": "Response",
+          "content": "Government and international organizations are implementing environmental protection and climate resilience projects."
         }
       ]
     },
@@ -166,35 +145,29 @@
     {
       "number": "2.6",
       "title": "Legal",
-      "slug": "2-6-legal",
-      "content": "",
       "subsections": [
         {
           "number": "2.6.1",
           "title": "Legal System",
-          "content": "The legal system is based on Portuguese law and includes constitutional, administrative, and ordinary courts. It supports rule of law but faces enforcement challenges."
+          "content": "The legal system is based on Portuguese law and includes constitutional and judicial courts."
         },
         {
           "number": "2.6.2",
           "title": "Investment Laws",
-          "content": "Investment regulations promote foreign investment through incentives, equal treatment, and protection against expropriation."
+          "content": "Foreign investment is allowed with incentives and protections against expropriation."
         },
         {
           "number": "2.6.3",
-          "title": "Land Regulations",
-          "content": "Most land is state-owned. Foreign investors can access land through concession systems rather than ownership."
+          "title": "Land Access",
+          "content": "Most land is government-owned and accessed through concessions rather than ownership."
         },
         {
           "number": "2.6.4",
-          "title": "Labor and Residency Laws",
-          "content": "Foreign workers must meet quotas and secure permits. Residency visas are available for work, study, and investment purposes."
-        },
-        {
-          "number": "2.6.5",
-          "title": "Religious Freedom",
-          "content": "The constitution guarantees freedom of religion and separation of state and religion, with equal rights for all groups."
+          "title": "Labor Laws",
+          "content": "Labor laws exist but enforcement is weak. Foreign workers require permits."
         }
       ]
     }
   ]
 }
+``
