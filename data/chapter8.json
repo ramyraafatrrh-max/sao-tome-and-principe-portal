@@ -7,6 +7,8 @@
       "number": "8.1",
       "title": "Visa & Resident Visa Guide",
       "slug": "8-1-visa-resident-visa-guide",
+      "content": "",
+      "references": [],
       "subsections": [
         {
           "number": "8.1.1",
@@ -23,36 +25,36 @@
           "references": []
         },
         {
-          "number": "8.1.2",
-          "title": ". 1 Visa-Free Entry",
+          "number": "8.1.2.1",
+          "title": "Visa-Free Entry",
           "slug": "8-1-2-1-visa-free-entry",
           "content": "Citizens of a range of countries — including EU member states, the USA, Canada, and recent signatories such as Ghana, Mozambique, Colombia, and Dominica — may enter STP without a prior visa for short stays. US citizens may stay up to 30 days; most other qu alifying nationals receive up to 15 days. These short -stay privileges do not confer any right of residency.",
           "references": []
         },
         {
-          "number": "8.1.2",
-          "title": ". 2 Electronic Visa (e -Visa via eVisaST)",
+          "number": "8.1.2.2",
+          "title": "Electronic Visa (e-Visa via eVisaST)",
           "slug": "8-1-2-2-electronic-visa-e-visa-via-evisast",
           "content": "For nationalities not benefiting from visa -free entry, an electronic visa is available through the eVisaST platform. The e -Visa is a single -entry document valid for up to 30 days from the date of entry and must be used within 30 days of issue. It is valid for tourism, business visits, and transit. E -Visa holders do not qualify for residency; only long -stay visa holders may pursue residency status.\n\n- Apply online at the SMF eVisaST portal.\n\n- Upload a single PDF (under 2 MB) containing passport copy, travel ticket, and\n\naccommodation or contact details.\n\n- Save the generated process/reference number to track application status.\n\n- No changes are permitted post -submission — accuracy is critical.\n\n- Processing time: typically,  up to 7 days.\n\nVisa Fees & Airport Stamping:  Upon arrival at São Tomé International Airport, you are required to pay a stamping fee in cash  to receive the official visa stamp in your passport. Please ensure you have the exact amount ready:\n\n- €20 for a single -entry 1 -month Tourist Visa.\n\n- €30 for a single -entry 1 -month Business Visa.\n\n- Note: Children under 18 pay half the standard fee. ( Reference: São Tomé\n\nIslands FAQ )",
           "references": []
         },
         {
-          "number": "8.1.2",
-          "title": ". 3 Business / Commercial Visa",
+          "number": "8.1.2.3",
+          "title": "Business / Commercial Visa",
           "slug": "8-1-2-3-business-commercial-visa",
           "content": "Designed for commercial activities such as meetings, negotiations, or short -term engagements that do not constitute local employment. Valid for up to 30 days, available as single or multiple entry. Applications are submitted via the eVisaST platform using the same document upload procedure described above.",
           "references": []
         },
         {
-          "number": "8.1.2",
-          "title": ". 4 Long -Stay Visa (Visto de Longa Duração)",
+          "number": "8.1.2.4",
+          "title": "Long-Stay Visa (Visto de Longa Duração)",
           "slug": "8-1-2-4-long-stay-visa-visto-de-longa-dura-o",
           "content": "Foreign nationals intending to reside in STP for more than 90 days must obtain a long -stay visa prior to arrival. This visa is the prerequisite for subsequent applications for temporary or permanent residence permits. Applications are submitted at STP emba ssies or consulates abroad, with a processing period of up to 30 days. The visa category determines the basis for the applicant’s stay:\n\n- Subordinate employment (with a confirmed employment contract)\n\n- Independent professional or self -employed activity\n\n- Research or highly qualified professional positions\n\n- Study, exchange, internship, or voluntary work\n\n- Family reunification\n\n- Investment or business establishment",
           "references": []
         },
         {
-          "number": "8.1.2",
-          "title": ". 5 Visa Extension Process",
+          "number": "8.1.2.5",
+          "title": "Visa Extension Process",
           "slug": "8-1-2-5-visa-extension-process",
           "content": "If you need to extend your stay, the responsible authority is the Serviço de Migração e Fronteiras  (Immigration and Borders Service).\n\n- Practical Steps for Extension:\n\n1. Apply Early:  Submit your extension request 7 to 14 days before your current visa expires. Do not wait until the last day. 2. Visit the Immigration Office:  Go to the headquarters in the capital, São Tomé, and request an \"Extension of stay\" or \"Visa extension.\" 3. Prepare Required Documents:  You will generally need:\n\n- Your original passport.\n\n- A copy of your entry stamp or current visa.\n\n- A recent personal passport photo.\n\n- Proof of accommodation (hotel booking or residential address).\n\n- A tentative departure flight ticket or travel plan.\n\n- Proof of sufficient funds (not always requested, but highly\n\nrecommended).\n\n- A valid reason for the extension (e.g., tourism, personal\n\ncircumstances, or family visit). 4. Pay the Fees:  Extension fees vary based on the requested duration and are paid directly at the immigration office. 5. Wait for Approval:  Approval can be granted on the same day or take a few days, though it may take longer in certain cases.\n\n- Extension Duration & Important Warnings:\n\n- Duration:  Extensions are typically granted for an additional 15 to 30 days .\n\nLonger extensions are possible but not guaranteed.\n\n- Penalties:  Applying late may result in a fine. Overstaying your visa can lead to\n\ncomplications upon departure or the outright rejection of your extension request.\n\n- Note: An extension is an administrative approval granted by immigration, not\n\nan automatic right. Pro Tip:  If you plan to stay for up to 3 months from the beginning, it is best to enter with your initial visa and a clear extension plan, or ensure you have strong documented reasons (like a business or family.",
           "references": []
@@ -66,41 +68,11 @@
         },
         {
           "number": "8.1.4",
-          "title": "Flight Information (Egypt to Sao Tome)",
-          "slug": "8-1-4-flight-information-egypt-to-sao-tome",
-          "content": "- Departure:  Cairo International Airport (CAI)\n\n- Destination:  São Tomé International Airport (TMS)\n\n- Direct Flights:  There are no direct flights from Egypt to São Tomé. All routes\n\nrequire 1 to 2 layovers.",
+          "title": "Flight Information (Egypt to São Tomé)",
+          "slug": "8-1-4-flight-information-egypt-to-s-o-tom",
+          "content": "- Departure:  Cairo International Airport (CAI)\n\n- Destination:  São Tomé International Airport (TMS)\n\n- Direct Flights:  There are no direct flights from Egypt to São Tomé. All routes\n\nrequire 1 to 2 layovers.\n\n- Ethiopian Airlines / ASKY Airlines:  This is one of the most common and\n\npractical options for this route. Flights typically connect through Addis Ababa (ADD) and sometimes have an additional stop in a West African hub.\n\n- TAP Air Portugal:  A popular and reliable route that usually requires a layover\n\nin Lisbon (LIS), Portugal before heading south to São Tomé.\n\n- EgyptAir & Royal Air Maroc:  You can also find combined itineraries using\n\nthese airlines, which usually connect through Casablanca (CMN), Morocco.\n\n- One -Way Ticket:  Prices typically start around $750 to $900 USD  (approx.\n\n36,000 to 43,000 EGP), depending on how early you book.\n\n- Round -Trip Ticket:  Usually around $1,500 USD  (approx. 72,000 EGP).\n\n- Travel Time:  Due to layovers, expect your total travel duration to range\n\nanywhere from 16 to 22+ hours .\n\nThere are no direct flights that cover the entire route from Cairo to São Tomé via Angola, so your journey will be broken into two main segments. The Route, Airlines, & Travel Time:\n\n- Leg 1: Cairo (CAI) to Luanda, Angola (LAD/NBJ):  * Airlines:  You will typically\n\nfly with EgyptAir  (which occasionally offers direct flights) or Ethiopian Airlines  (which includes a layover in Addis Ababa). o Flight Duration:  If you manage to catch a direct flight, it takes about 6 hours . If you fly with a layover (like on Ethiopian Airlines), expect this leg to take anywhere from 10 to 15 hours .\n\n- Leg 2: Luanda to São Tomé (TMS):  * Airlines:  Once in Luanda, you will\n\nconnect to a regional flight. The most reliable carrier for this segment is TAAG Angola Airlines  (the national airline of Angola), which flies this route a few days a week. o Flight Duration:  This is a relatively short, direct flight taking approximately 2 hours and 15 minutes to 2 hours and 40 minutes . Total Estimated Travel Time:\n\n- Depending heavily on how long your layover is in Luanda, your total travel\n\ntime will generally range from 14 to 24+ hours .\n\n- Note: TAAG Angola Airlines does not fly to São Tomé every single day, so you\n\nmay have a longer overnight layover in Luanda depending on the day of the week you arrive from Cairo. Approximate Prices:  Because this route combines major international flights with regional African carriers, the price can vary depending on whether you book the journey on a single ticket or piece it together separately.\n\n- One -Way Total:  Expect to pay roughly $750 to $950 USD  (approx. 36,000 to\n\n45,500 EGP).\n\n- Round -Trip Total:  Generally,  ranges between $1,300 and $1,700 USD\n\n(approx. 62,500 to 81,500 EGP). Pro Tip:  Pay close attention to your layover time in Luanda. If you have to self - transfer (meaning you booked the two legs on separate tickets and need to re -check your bags) or if you have a very long layover, you may be required to apply for an Angolan Transit Visa  in advance. Always ask the airline if your luggage can be checked all the way through to São Tomé! Pro Tip:  When booking flights with layovers in places like Lisbon or Casablanca, double -check if you will need a transit visa based on the layover duration and the terminal layout of those specific airports. Primary Route Path  Flight Segments (Leg 1 → Leg 2)  Total Duration  Est. Round - Trip Price  Confirmed 2026 Visa & Transit Status The East African (Ethiopian/ASKY)  Leg 1: CAI ,Addis Ababa (ADD) 16 – 22 hrs. ~$1,500 USD VISA -FREE TRANSIT: Egyptians can transit ADD without a visa if the layover under12 hrs. Leg 2: ADD , São Tomé (TMS)  (~72,000 EGP)  Note: Airline Layover  Provided by Airline  Free (on Ethiopian Airlines) if transit from 8 -24 hrs. The European (TAP Portugal)  Leg 1: CAI , Lisbon (LIS) Leg 2: LIS , São Tomé (TMS)  18 – 22 hrs. ~$1,500 USD (~72,000 EGP)      ATV REQUIRED: Egyptian citizens usually need a Schengen Airport Transit Visa for Lisbon. Most expensive route due to visa fees and VFS processing. The North African (RAM / EgyptAir)  Leg 1: CAI ,Casablanca (CMN) Leg 2: CMN , São Tomé (TMS)  17 – 20 hrs. ~$1,500 USD (~72,000 EGP)     24H EXEMPTION: No visa needed if the layover is under 24 hours and you remain in the transit area. Ideal for budget -conscious travelers. The Central African (EgyptAir / TAAG)  Leg 1: CAI , Luanda (LAD) Leg 2: LAD , São Tomé (TMS)  14 – 24 hrs. $1,300 – $1,700 USD (~62.5k –",
           "references": []
         },
-        {
-          "number": "8.1.4",
-          "title": ". 1 Available Airlines & Common Routes:",
-          "slug": "8-1-4-1-available-airlines-common-routes",
-          "content": "- Ethiopian Airlines / ASKY Airlines:  This is one of the most common and\n\npractical options for this route. Flights typically connect through Addis Ababa (ADD) and sometimes have an additional stop in a West African hub.\n\n- TAP Air Portugal:  A popular and reliable route that usually requires a layover\n\nin Lisbon (LIS), Portugal before heading south to São Tomé.\n\n- EgyptAir & Royal Air Maroc:  You can also find combined itineraries using\n\nthese airlines, which usually connect through Casablanca (CMN), Morocco.",
-          "references": []
-        },
-        {
-          "number": "8.1.4",
-          "title": ". 2 Approximate Prices & Duration:",
-          "slug": "8-1-4-2-approximate-prices-duration",
-          "content": "- One -Way Ticket:  Prices typically start around $750 to $900 USD  (approx.\n\n36,000 to 43,000 EGP), depending on how early you book.\n\n- Round -Trip Ticket:  Usually around $1,500 USD  (approx. 72,000 EGP).\n\n- Travel Time:  Due to layovers, expect your total travel duration to range\n\nanywhere from 16 to 22+ hours .",
-          "references": []
-        },
-        {
-          "number": "8.1.4",
-          "title": ". 3 Flying via Angola (Luanda)",
-          "slug": "8-1-4-3-flying-via-angola-luanda",
-          "content": "There are no direct flights that cover the entire route from Cairo to São Tomé via Angola, so your journey will be broken into two main segments. The Route, Airlines, & Travel Time:\n\n- Leg 1: Cairo (CAI) to Luanda, Angola (LAD/NBJ):  * Airlines:  You will typically\n\nfly with EgyptAir  (which occasionally offers direct flights) or Ethiopian Airlines  (which includes a layover in Addis Ababa). o Flight Duration:  If you manage to catch a direct flight, it takes about 6 hours . If you fly with a layover (like on Ethiopian Airlines), expect this leg to take anywhere from 10 to 15 hours .\n\n- Leg 2: Luanda to São Tomé (TMS):  * Airlines:  Once in Luanda, you will\n\nconnect to a regional flight. The most reliable carrier for this segment is TAAG Angola Airlines  (the national airline of Angola), which flies this route a few days a week. o Flight Duration:  This is a relatively short, direct flight taking approximately 2 hours and 15 minutes to 2 hours and 40 minutes . Total Estimated Travel Time:\n\n- Depending heavily on how long your layover is in Luanda, your total travel\n\ntime will generally range from 14 to 24+ hours .\n\n- Note: TAAG Angola Airlines does not fly to São Tomé every single day, so you\n\nmay have a longer overnight layover in Luanda depending on the day of the week you arrive from Cairo. Approximate Prices:  Because this route combines major international flights with regional African carriers, the price can vary depending on whether you book the journey on a single ticket or piece it together separately.\n\n- One -Way Total:  Expect to pay roughly $750 to $950 USD  (approx. 36,000 to\n\n45,500 EGP).\n\n- Round -Trip Total:  Generally,  ranges between $1,300 and $1,700 USD\n\n(approx. 62,500 to 81,500 EGP). Pro Tip:  Pay close attention to your layover time in Luanda. If you have to self - transfer (meaning you booked the two legs on separate tickets and need to re -check your bags) or if you have a very long layover, you may be required to apply for an Angolan Transit Visa  in advance. Always ask the airline if your luggage can be checked all the way through to São Tomé! Pro Tip:  When booking flights with layovers in places like Lisbon or Casablanca, double -check if you will need a transit visa based on the layover duration and the terminal layout of those specific airports. Primary Route Path  Flight Segments (Leg 1 → Leg 2)  Total Duration  Est. Round - Trip Price  Confirmed 2026 Visa & Transit Status The East African (Ethiopian/ASKY)  Leg 1: CAI ,Addis Ababa (ADD) 16 – 22 hrs. ~$1,500 USD VISA -FREE TRANSIT: Egyptians can transit ADD without a visa if the layover under12 hrs. Leg 2: ADD , São Tomé (TMS)  (~72,000 EGP)  Note: Airline Layover  Provided by Airline  Free (on Ethiopian Airlines) if transit from 8 -24 hrs. The European (TAP Portugal)  Leg 1: CAI , Lisbon (LIS) Leg 2: LIS , São Tomé (TMS)  18 – 22 hrs. ~$1,500 USD (~72,000 EGP)      ATV REQUIRED: Egyptian citizens usually need a Schengen Airport Transit Visa for Lisbon. Most expensive route due to visa fees and VFS processing. The North African (RAM / EgyptAir)  Leg 1: CAI ,Casablanca (CMN) Leg 2: CMN , São Tomé (TMS)  17 – 20 hrs. ~$1,500 USD (~72,000 EGP)     24H EXEMPTION: No visa needed if the layover is under 24 hours and you remain in the transit area. Ideal for budget -conscious travelers. The Central African (EgyptAir / TAAG)  Leg 1: CAI , Luanda (LAD) Leg 2: LAD , São Tomé (TMS)  14 – 24 hrs. $1,300 – $1,700 USD (~62.5k –",
-          "references": []
-        }
-      ],
-      "content": "",
-      "references": []
-    },
-    {
-      "number": "81.5",
-      "title": "k EGP) TRANSIT LIMIT: No visa if under",
-      "slug": "81-5-k-egp-transit-limit-no-visa-if-under",
-      "subsections": [
         {
           "number": "8.1.5",
           "title": "Temporary Residence Permit",
@@ -109,64 +81,64 @@
           "references": []
         },
         {
-          "number": "8.1.5",
-          "title": ". 1 Eligibility",
+          "number": "8.1.5.1",
+          "title": "Eligibility",
           "slug": "8-1-5-1-eligibility",
           "content": "To qualify for a temporary residence permit, the applicant must:\n\n- Hold a valid long -stay visa appropriate to their purpose of stay.\n\n- Demonstrate an ongoing legitimate reason to remain:  active employment\n\ncontract, registration of a business, enrolment in a recognized  study programme, or documented family ties to a lawful STP resident.\n\n- Prove financial self -sufficiency or have regular income.\n\n- Have no disqualifying criminal record.",
           "references": []
         },
         {
-          "number": "8.1.5",
-          "title": ". 2 Documentation Required",
+          "number": "8.1.5.2",
+          "title": "Documentation Required",
           "slug": "8-1-5-2-documentation-required",
           "content": "The following documents are generally required when applying to the SMF for a temporary residence permit: Document  Notes / Specifications Valid Passport  Minimum 6 months’ validity beyond the intended period of stay. All pages required. Long -Stay Visa  Confirming the authorized  purpose of entry (employment, study, investment, etc.). Application Form  Standard SMF form, completed in Portuguese or with a certified translation. Proof of Accommodation  Rental contract, hotel booking confirmation, or notarized  letter from host. Proof of Financial Means  Bank statements, employment contract specifying salary, or investment documentation. Criminal Background Check  Issued by the applicant’s country of origin; must be apostilled where applicable. Health Certificate  Certificate of good health; some circumstances may require a medical examination. Yellow Fever Certificate  Mandatory for entry into STP; must be presented at the border and at SMF. Passport -Sized Photographs  Typically, 2 –4 recent color photographs against a white background. Employment Contract (if applicable)  Must carry a favorable  opinion from the Ministry of Labor  confirming the absence of suitable local candidates. Business Registration (if applicable)  Company incorporation documents showing active investment activity in STP. Proof of Enrolment (if applicable)  For students: letter of acceptance from a recognized STP educational institution.",
           "references": []
         },
         {
-          "number": "8.1.5",
-          "title": ". 3 Employment -Based Temporary Residency: Additional Requirements",
+          "number": "8.1.5.3",
+          "title": "Employment-Based Temporary Residency: Additional Requirements",
           "slug": "8-1-5-3-employment-based-temporary-residency-additional-requirements",
           "content": "For foreign nationals applying under the employment category, the Santomean government applies a local -labour preference policy. The employer must:\n\n- Submit an employment contract to the Ministry of Labour.\n\n- Obtain a favorable  opinion from the Ministry within 20 days, confirming that\n\nthe contractual terms meet legal standards and that no suitable local candidate is available.\n\n- Comply with foreign worker quota requirements that priorities  local\n\nemployment.",
           "references": []
         },
         {
-          "number": "8.1.5",
-          "title": ". 4 Independent Professional / Investor Residency",
+          "number": "8.1.5.4",
+          "title": "Independent Professional / Investor Residency",
           "slug": "8-1-5-4-independent-professional-investor-residency",
           "content": "For self -employed professionals and investors, the applicant must demonstrate:\n\n- Evidence of registered foreign investment or sufficient capital to sustain\n\nindependent activity.\n\n- Professional qualifications where the activity requires them.\n\n- A clear business or professional plan aligned with STP’s development\n\npriorities (tourism, agriculture, renewable energy, and infrastructure).",
           "references": []
         },
         {
-          "number": "8.1.5",
-          "title": ". 5 Application Procedure",
+          "number": "8.1.5.5",
+          "title": "Application Procedure",
           "slug": "8-1-5-5-application-procedure",
           "content": "The application for a temporary residence permit is made in person at the SMF office in São Tomé, following legal entry into the country: 1. Step 1 — Obtain Long -Stay Visa: Apply at the nearest STP embassy or consulate in your home country before travelling. 2. Step 2 — Enter STP: Present your long -stay visa and yellow fever certificate at the port of entry. Ensure your passport has at least 6 months’ validity. 3. Step 3 — Compile Documentation: Gather all required documents, ensuring all foreign -language documents are translated into Portuguese by a certified translator. Have apostilles applied as required. 4. Step 4 — Submit to SMF: Present your application in person at the Serviço de Migração e Fronteiras (SMF) office. Pay the applicable processing fee. 5. Step 5 — Await Processing: Processing times can vary. Bureaucratic delays are common; applicants should submit early and allow a generous lead time. 6. Step 6 — Collect Permit: Upon approval, collect your temporary residence card from SMF. This document must be kept on your person at all times. 7. Step 7 — Renew Annually: The permit is typically valid for one year. Renewal applications should be initiated at least 30 days before expiry.",
           "references": []
         },
         {
           "number": "8.1.6",
-          "title": "Permeant Residence Permit",
-          "slug": "8-1-6-permeant-residence-permit",
+          "title": "Permanent Residence Permit",
+          "slug": "8-1-6-permanent-residence-permit",
           "content": "Permanent residency in STP may be obtained after five years of continuous and lawful temporary residence. This represents the standard residency pathway for long -term foreign nationals, including workers, self -employed professionals, and family members.",
           "references": []
         },
         {
-          "number": "8.1.6",
-          "title": ". 1 Eligibility Criteria",
+          "number": "8.1.6.1",
+          "title": "Eligibility Criteria",
           "slug": "8-1-6-1-eligibility-criteria",
           "content": "- Minimum 5 years of uninterrupted legal residence in STP under a valid\n\ntemporary residence permit.\n\n- Demonstrated financial stability: steady income from employment, self -\n\nemployment, or investment.\n\n- No major criminal convictions or breaches of STP immigration law during the\n\nresidence period.\n\n- Established ties to the country: employment, family, business ownership, or\n\nproperty ownership.\n\n- Basic working knowledge of Portuguese is strongly advisable, as the\n\nimmigration process is conducted in Portuguese.",
           "references": []
         },
         {
-          "number": "8.1.6",
-          "title": ". 2 Documentation Required",
+          "number": "8.1.6.2",
+          "title": "Documentation Required",
           "slug": "8-1-6-2-documentation-required",
           "content": "In addition to the standard documents listed for temporary residency, permanent residency applications require:\n\n- Proof of continuous and legal residence for the full 5 -year period (residency\n\npermit renewal stamps, tax filings, employment records, or utility bills).\n\n- Current valid temporary residence permit.\n\n- Updated criminal background check from both the applicant’s home country\n\nand STP judicial authorities.\n\n- Evidence of financial self -sufficiency (bank statements for the preceding 12\n\nmonths).\n\n- Updated health certificate and yellow fever card.",
           "references": []
         },
         {
-          "number": "8.1.6",
-          "title": ". 3 Rights and Benefits",
+          "number": "8.1.6.3",
+          "title": "Rights and Benefits",
           "slug": "8-1-6-3-rights-and-benefits",
           "content": "Permanent residents of STP enjoy the following:\n\n- The right to reside in STP indefinitely without annual renewals.\n\n- The right to work without a separate work permit.\n\n- Access to most public services and administrative rights afforded to citizens,\n\nexcept the right to vote.\n\n- The ability to sponsor family members for family reunification visas.\n\n- Eligibility, after meeting additional criteria, to apply for STP citizenship\n\n(typically after a further period of residence).",
           "references": []
@@ -179,22 +151,22 @@
           "references": []
         },
         {
-          "number": "8.1.7",
-          "title": ". 1 Investment Visa and Investor Residency",
+          "number": "8.1.7.1",
+          "title": "Investment Visa and Investor Residency",
           "slug": "8-1-7-1-investment-visa-and-investor-residency",
           "content": "STP actively encourages foreign direct investment, particularly in tourism, agriculture, and renewable energy. Foreign investors who demonstrate job creation or meaningful contribution to the national economy may be eligible for expedited special residency  permits. Permanent residency for investors is available to those making significant contributions, such as establishing a business or funding infrastructure projects.",
           "references": []
         },
         {
-          "number": "8.1.7",
-          "title": ". 2 Citizenship by Investment (CBI) Programm e",
-          "slug": "8-1-7-2-citizenship-by-investment-cbi-programm-e",
+          "number": "8.1.7.2",
+          "title": "Citizenship by Investment (CBI) Programme",
+          "slug": "8-1-7-2-citizenship-by-investment-cbi-programme",
           "content": "New Programme — Effective 1 August 2025 (Decreto -Lei n.º 07/2025) For foreign nationals who wish to skip the standard 5 -year residency pathway entirely, STP launched a Citizenship by Investment (CBI) programme in August 2025. This represents the fastest route to legal status in STP.\n\n- Minimum investment: USD 90,000 (single applicant) — non-refundable\n\ncontribution to the National Transformation Fund\n\n- Family of 2 –4 members: USD 95,000 (+ USD 5,000 per additional dependent)\n\n- Processing time: approximately 6 –8 weeks from complete application\n\nsubmission\n\n- No residency requirement, no interview, no language test\n\n- Dual citizenship permitted; no requirement to renounce original nationality\n\n- Process can be completed entirely remotely through a licensed agent\n\n- Dependants eligible: spouse, children under 30, parents and grandparents\n\naged 55+\n\n- First passports issued January 2026 following 27 approvals\n\n- Passport provides visa -free or visa -on-arrival access to approximately 60 –70+\n\ncountries\n\n- CPLP membership facilitates preferential treatment within Portuguese -\n\nspeaking states",
           "references": []
         },
         {
-          "number": "8.1.7",
-          "title": ". 3 CPLP Mobility Agreement",
+          "number": "8.1.7.3",
+          "title": "CPLP Mobility Agreement",
           "slug": "8-1-7-3-cplp-mobility-agreement",
           "content": "STP is a member of the Community of Portuguese Language Countries (CPLP). This membership provides STP citizens and certain CPLP nationals with preferential mobility arrangements within member states — including access to simplified residence permit proces ses in Portugal. However, CPLP membership does not constitute automatic residency or immigration rights in other member states; national immigration laws continue to apply.",
           "references": []
@@ -207,36 +179,36 @@
           "references": []
         },
         {
-          "number": "8.1.8",
-          "title": ". 1 Language",
+          "number": "8.1.8.1",
+          "title": "Language",
           "slug": "8-1-8-1-language",
           "content": "Portuguese is the official language of STP. All immigration processes, forms, and official correspondence are conducted in Portuguese. Foreign -language documents must be translated by a certified translator before submission to the SMF. Proficiency in Port uguese, while not formally tested at the temporary residency stage, is practically essential for navigating daily life and bureaucratic processes.",
           "references": []
         },
         {
-          "number": "8.1.8",
-          "title": ". 2 Yellow Fever Vaccination",
+          "number": "8.1.8.2",
+          "title": "Yellow Fever Vaccination",
           "slug": "8-1-8-2-yellow-fever-vaccination",
           "content": "A valid yellow fever vaccination certificate is mandatory for all travelers  entering STP, regardless of nationality. This requirement applies at the border and must also be presented as part of residency documentation.",
           "references": []
         },
         {
-          "number": "8.1.8",
-          "title": ". 3 Healthcare and Infrastructure",
+          "number": "8.1.8.3",
+          "title": "Healthcare and Infrastructure",
           "slug": "8-1-8-3-healthcare-and-infrastructure",
           "content": "Medical services in STP are limited. There are no adequate trauma or ambulance services on the islands. Even minor health issues may require medical evacuation at the individual’s expense. All foreign residents are strongly advised to maintain comprehensiv e international health insurance including medical evacuation coverage.",
           "references": []
         },
         {
-          "number": "8.1.8",
-          "title": ". 4 Financial Considerations",
+          "number": "8.1.8.4",
+          "title": "Financial Considerations",
           "slug": "8-1-8-4-financial-considerations",
           "content": "The official currency is the São Toméan Dobra (STN), pegged to the Euro. International credit cards (Visa) can be used at selected ATMs, stores, and hotels. USD and Euros are widely accepted for exchange at banks. For exit from STP, a report is required wh en leaving with €10,000 or more; financial statements must prove that no more is being exported than was  brought in.",
           "references": []
         },
         {
-          "number": "8.1.8",
-          "title": ". 5 Processing Times and Bureaucracy",
+          "number": "8.1.8.5",
+          "title": "Processing Times and Bureaucracy",
           "slug": "8-1-8-5-processing-times-and-bureaucracy",
           "content": "Like many small island nations, STP can experience delays in administrative processing. Long -term residency and work permit applications are particularly susceptible. Applicants should plan well in advance, allow buffer time before any business commencemen t date, and consider retaining a local legal representative or immigration agent to navigate the process efficiently.",
           "references": []
@@ -245,19 +217,63 @@
           "number": "8.1.9",
           "title": "Summary",
           "slug": "8-1-9-summary",
-          "content": "Pathway  Duration  Min. Requirement  Key Notes Visa-Free Entry  15–30 days  Valid passport; yellow fever card  No residency rights; entry only e-Visa / Business Visa Up to 30 days  eVisaST application; supporting docs  Single entry; no residency qualification Long -Stay Visa Up to 90 days  Embassy/consulate application  Prerequisite to residency permits Temporary Residence  1 year (renewable)  Long -stay visa + SMF application + 5 -year path  Required for stays >90 days; work -specific categories Permanent Residence  Indefinite  5 years continuous lawful residence  Requires financial stability + ties to STP CBI Programme  Immediate citizenship  USD 90,000+ to National Transformation Fund  Launched Aug 2025; no residency requirement",
-          "references": []
+          "content": "",
+          "references": [],
+          "table": {
+            "columns": [
+              "Pathway",
+              "Duration",
+              "Minimum requirement",
+              "Key notes"
+            ],
+            "rows": [
+              [
+                "Visa-Free Entry",
+                "15–30 days",
+                "Valid passport; yellow fever card as applicable",
+                "No residency rights; entry only"
+              ],
+              [
+                "e-Visa / Business Visa",
+                "Up to 30 days",
+                "eVisaST application; supporting documents",
+                "Single entry; no residency qualification"
+              ],
+              [
+                "Long-Stay Visa",
+                "Up to 90 days",
+                "Embassy/consulate application",
+                "Prerequisite to residency permits"
+              ],
+              [
+                "Temporary Residence",
+                "1 year (renewable)",
+                "Long-stay visa + SMF application",
+                "Required for stays >90 days; category-specific"
+              ],
+              [
+                "Permanent Residence",
+                "Indefinite",
+                "5 years continuous lawful residence",
+                "Requires stability and ties to STP"
+              ],
+              [
+                "CBI Programme",
+                "Immediate citizenship",
+                "USD 90,000+ contribution",
+                "Launched Aug 2025; no residency requirement"
+              ]
+            ]
+          }
         },
         {
           "number": "8.1.10",
           "title": "Useful Contacts and Resources",
           "slug": "8-1-10-useful-contacts-and-resources",
-          "content": "Pathway  Duration  Min. Requirement  Key Notes Visa-Free Entry  15–30 days  Valid passport; yellow fever card  No residency rights; entry only e-Visa / Business Visa Up to 30 days  eVisaST application; supporting docs  Single entry; no residency qualification Long -Stay Visa Up to 90 days  Embassy/consulate application  Prerequisite to residency permits Temporary Residence  1 year (renewable)  Long -stay visa + SMF application + 5 -year path  Required for stays >90 days; work -specific categories Permanent Residence  Indefinite  5 years continuous lawful residence  Requires financial stability + ties to STP CBI Programme  Immediate citizenship  USD 90,000+ to National Transformation Fund  Launched Aug 2025; no residency requirement",
+          "content": "- SMF (Serviço de Migração e Fronteiras): Immigration and Borders Service (in-country applications).\n- eVisaST portal: Online e-visa application and tracking.\n- National health guidance: follow CDC travel advice and carry yellow fever certificate when required.\n- Airlines: Ethiopian Airlines, TAP Air Portugal, Royal Air Maroc, TAAG Angola; verify transit visa requirements for each layover.",
           "references": []
         }
-      ],
-      "content": "24h in the airport. Transit Visa ($50) required if staying overnight or re - checking bags (self -transfer).",
-      "references": []
+      ]
     },
     {
       "number": "8.2",
@@ -372,23 +388,23 @@
       "slug": "8-8-to-travel-from-s-o-tom-to-pr-ncipe",
       "subsections": [
         {
-          "number": "8.7.1",
+          "number": "8.8.1",
           "title": "Air Travel :",
-          "slug": "8-7-1-air-travel",
+          "slug": "8-8-1-air-travel",
           "content": "This is the quickest and most direct way to get from São Tomé to Príncipe.  STP Airways  and Africa's Connection STP  are two local airlines that provide flights between the islands. The flights typically take around 30 to 40 minutes.  This route offers  18 fli ghts per week, making it the most frequent air connection in Sao Tome.",
           "references": []
         },
         {
-          "number": "8.7.2",
+          "number": "8.8.2",
           "title": "Sea Travel:",
-          "slug": "8-7-2-sea-travel",
+          "slug": "8-8-2-sea-travel",
           "content": "For those who prefer or require a less expensive option and aren't constrained by time, there are boat services available. The journeys by sea can take anywhere from 6 to 12 hours, depending on the service chosen, the size of the vessel, and weather condit ions. This option is more prone to delays and cancellations due to weather, and it's important to be aware that sea conditions can be rough",
           "references": []
         },
         {
-          "number": "8.7.3",
+          "number": "8.8.3",
           "title": "A round trip on the new boat:",
-          "slug": "8-7-3-a-round-trip-on-the-new-boat",
+          "slug": "8-8-3-a-round-trip-on-the-new-boat",
           "content": "is expected to cost $130, which is about 3,000 dobras, compared to the current airfare of $270, estimated at 6,500 dobras. A local resident, who requested anonymity, has appealed for government support, especially for those living in Príncipe, due to the many challenges they face. Ref: https://www.saotomeexpert.pt/en/sao -tome -travel -to-principe/",
           "references": [
             "https://www.saotomeexpert.pt/en/sao"
@@ -462,8 +478,8 @@
     },
     {
       "number": "8.12",
-      "title": ".1 Important Financial Notes",
-      "slug": "8-12-1-important-financial-notes",
+      "title": "Important Financial Notes",
+      "slug": "8-12-important-financial-notes",
       "subsections": [],
       "content": "- São Tomé is more expensive than most visitors expect for West/Central\n\nAfrica. Import dependency drives up costs significantly.\n\n- The local currency is the Dobra (STN), pegged to the Euro. Euros are widely\n\naccepted and practically essential for cash transactions.\n\n- There are no functional international ATMs outside the capital. Bring\n\nsufficient Euro cash for the entire trip before arriving.\n\n- Tipping: taxi drivers do not expect tips; hotel porters appreciate 1 –2 STN per\n\nbag; tour guides: 5 –10% of tour cost for excellent service. thechocolateislands.com, farandwild.travel, BudgetYourTrip.com, CityCost.org, Climates to Travel, Weather Atlas.",
       "references": []
@@ -523,7 +539,7 @@
         },
         {
           "number": "8.13.3",
-          "title": ". Feedback from Previous Travelers and Volunteers",
+          "title": "Feedback from Previous Travelers and Volunteers",
           "slug": "8-13-3-feedback-from-previous-travelers-and-volunteers",
           "content": "The Positives: Volunteers report highly rewarding experiences, noting the extreme safety of the islands, the welcoming nature of host families, and the unique opportunity to work in a pristine, \"lost world\" jungle environment. The Pitfalls: Independent travellers repeatedly warn about the absolute necessity of bringing all funds in physical cash due to the lack of ATM connectivity. Volunteers have also reported instances of erratic and disorganised hosts when using unofficial platforms like \" Workaway\", highlighting the importance of verifying your NGO or accommodation thoroughly before committing to a 2 -month stay.",
           "references": []
