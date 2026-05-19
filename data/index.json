@@ -1,0 +1,55 @@
+{
+  "country": {
+    "name": "São Tomé and Príncipe",
+    "code": "STP",
+    "flag": "assets/flag-stp.svg"
+  },
+  "chapters": [
+    {
+      "number": 1,
+      "title": "Overview",
+      "slug": "chapter-1-overview"
+    },
+    {
+      "number": 2,
+      "title": "PESTEL",
+      "slug": "chapter-2-pestel"
+    },
+    {
+      "number": 3,
+      "title": "Country Segmentation",
+      "slug": "chapter-3-country-segmentation"
+    },
+    {
+      "number": 4,
+      "title": "Religious Overview",
+      "slug": "chapter-4-religious-overview"
+    },
+    {
+      "number": 5,
+      "title": "SWOT Analysis",
+      "slug": "chapter-5-swot-analysis"
+    },
+    {
+      "number": 6,
+      "title": "Stakeholders Mapping",
+      "slug": "chapter-6-stakeholders-mapping"
+    },
+    {
+      "number": 7,
+      "title": "Biblical and Spiritual Mapping",
+      "slug": "chapter-7-biblical-and-spiritual-mapping"
+    },
+    {
+      "number": 8,
+      "title": "Country Entry",
+      "slug": "chapter-8-country-entry"
+    },
+    {
+      "number": 9,
+      "title": "Problems / Challenges",
+      "slug": "chapter-9-problems-challenges"
+    }
+  ],
+  "generatedAt": "2026-05-19T11:54:32.895972Z"
+}
