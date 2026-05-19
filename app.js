@@ -1,5 +1,6 @@
 /* Static docs app for GitHub Pages (hash routing).
    Supports optional structured tables via node.table = { columns:[], rows:[[]] }.
+   If node.table exists, ONLY the table is rendered (no duplicated markdown text).
 */
 
 const EMBEDDED_CHAPTERS = [
@@ -115,21 +116,20 @@ function renderTabs(container, tabs, activeHref){
   }
 }
 
-function renderContent(text){
-  if (!text){ el.content.innerHTML = ''; return; }
-  el.content.innerHTML = renderTextToHtml(text);
-}
-
 function renderTextToHtml(text){
   if (!text) return '';
   const lines = String(text).split('\n');
   return lines.map((ln) => {
     if (ln.startsWith('### ')) return `<h3>${escapeHtml(ln.replace(/^###\s+/, ''))}</h3>`;
     if (ln.startsWith('- ')) return `<div>• ${linkify(ln.slice(2))}</div>`;
-    // allow inline lists formatted as "• "
     if (ln.startsWith('• ')) return `<div>• ${linkify(ln.slice(2))}</div>`;
     return ln.trim() ? `<p>${linkify(ln)}</p>` : '';
   }).join('');
+}
+
+function renderContent(text){
+  if (!text){ el.content.innerHTML = ''; return; }
+  el.content.innerHTML = renderTextToHtml(text);
 }
 
 function renderRefs(links){
@@ -155,11 +155,9 @@ function renderNode(node){
     return;
   }
 
+  // If a structured table exists, render ONLY the table.
   if (node.table){
-    // If a structured table exists, render it as a true HTML table.
-    // node.content can be used as an intro paragraph (optional).
-    const intro = node.content ? `<div class="tableIntro">${renderTextToHtml(node.content)}</div>` : '';
-    el.content.innerHTML = `${intro}${renderHtmlTable(node.table)}`;
+    el.content.innerHTML = renderHtmlTable(node.table);
   } else {
     renderContent(node.content);
   }
@@ -178,7 +176,6 @@ function findSub(section, subSlug){
 async function render(){
   const r = parseHash();
 
-  // Chapter tab bar
   const chapterTabs = (state.index.chapters || []).map(c => ({
     top: `Chapter ${c.number}`,
     sub: c.title,
@@ -201,7 +198,6 @@ async function render(){
   await loadChapter(r.chapter);
 
   const chMeta = (state.index.chapters || []).find(c => c.number === r.chapter);
-
   const secTabs = (state.chapter.sections || []).map(s => ({
     top: s.number,
     sub: s.title,
@@ -215,7 +211,6 @@ async function render(){
     renderTabs(el.sectionTabs, secTabs, null);
     el.subsectionTabs.style.display = 'none';
 
-    // show summary if first section is .0
     const sum = state.chapter.sections?.[0];
     if (sum && String(sum.number).endsWith('.0')) renderNode(sum);
     else renderNode(null);
@@ -228,7 +223,6 @@ async function render(){
     return;
   }
 
-  // If section has subsections but no subsection selected yet, redirect to first
   if ((sec.subsections || []).length && !r.sub){
     location.hash = `#/chapter/${r.chapter}/section/${sec.slug}/sub/${sec.subsections[0].slug}`;
     return;
