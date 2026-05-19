@@ -1,523 +1,200 @@
 {
   "number": 2,
-  "title": "PESTEL",
+  "title": "PESTEL Analysis",
   "slug": "chapter-2-pestel",
   "sections": [
     {
       "number": "2.1",
       "title": "Political",
       "slug": "2-1-political",
+      "content": "",
       "subsections": [
         {
           "number": "2.1.1",
-          "title": ". Government",
-          "slug": "2-1-1-government",
-          "content": "- Type:  Presidential -parliamentary democracy with a multi -party system. The\n\nPresident is directly elected for up to two consecutive five -year terms, while the Prime Minister, who holds most executive powers, is appointed by the President based on legislative elec tion results.\n\n- Stability:  Governments are often short -lived due to proportional\n\nrepresentation, which encourages coalition or minority governments.\n\n- Civil Liberties:  Civil liberties are generally respected, though poverty and\n\ncorruption weaken some institutions and reduce judicial efficiency.\n\n- Judicial Independence:  The judiciary is partially independent but susceptible\n\nto political influence and corruption. A three -year judicial modernization program was launched in 2020 to enhance judicial and prosecutorial independence. principe/freedom -world/2021",
-          "references": [
-            "https://freedomhouse.org/country/sao",
-            "https://stp.gov.st/membros_governo"
-          ]
+          "title": "Government Structure",
+          "content": "São Tomé and Príncipe operates a semi-presidential multi-party democratic system. The President is elected for two five-year terms, while the Prime Minister, appointed by the President, holds most executive powers. Governments are often short-lived due to coalition politics. Civil liberties are generally respected, though institutional weaknesses and corruption affect governance."
         },
         {
           "number": "2.1.2",
-          "title": ". Trade (Political Context)",
-          "slug": "2-1-2-trade-political-context",
-          "content": "- São Tomé and Príncipe has a weakly integrated trade system , as it is not yet\n\na member of the WTO. Although it applied for accession in 2005, the process remains stalled, limiting alignment with global trade standards and reducing international trade credibility. cipe_e.htm?utm_source=chatgpt.com\n\n- Trade is highly concentrated geographically , with exports mainly directed to\n\nEuropean countries (e.g., Netherlands, Belgium, Portugal, Germany, and Spain), while imports are dominated by Portugal and a few African and international partners (e.g., Togo, Angola, Japan, and Turkey). LTST/TradeFlow/Import/Partner/all Trade  structure: The country exhibits a significant trade imbalance, with imports (≈ $165 million in 2024) far exceeding exports, which remain very limited and narrow in scope\n\n- The export base is undiversified, relying primarily on cocoa and low -value\n\nmaterials, while imports consist mainly of food, manufactured goods, and essential commodities  indicating  strong dependence on external markets . 2025\n\n- Trade policies  remain relatively flexible , with moderate tariff levels (~10%),\n\nbut the absence of WTO membership results  in a lack of binding commitments and weaker positioning in global trade negotiations.\n\n- Overall trade volume is very small on a global scale , as reflected by minimal\n\ntrade relations with major economies (e.g., total trade with the United States ≈ $1.6 million in 2024).",
-          "references": [
-            "https://statbase.org/data/stp",
-            "https://tradingeconomics.com/sao",
-            "https://ttd.wto.org/en/profiles/sao",
-            "https://wits.worldbank.org/CountryProfile/en/Country/STP/Year/",
-            "https://www.wto.org/english/thewto_e/acc_e/a1_sao_tome_prin"
-          ]
+          "title": "Trade Environment",
+          "content": "The country is not yet a member of the WTO, limiting its integration into global trade systems. Trade is highly concentrated with Europe, particularly Portugal. Imports significantly exceed exports, creating a persistent trade deficit. The economy depends heavily on imported goods and a narrow export base focused on cocoa."
         },
         {
           "number": "2.1.3",
-          "title": ". Tax Policies (Political / Fiscal Context)",
-          "slug": "2-1-3-tax-policies-political-fiscal-context",
-          "content": "- São Tomé and Príncipe operates a developing tax system with limited\n\nadministrative capacity and enforcement challenges.\n\n- São Tomé and Príncipe operates a structured tax system under the Ministry of\n\nEconomy and Finance, with progressive personal income tax rates reaching up to 25% and social security contributions totaling 14% (8% employer and 6% employee).\n\n- The government introduced a Value Added Tax (VAT) at a standard rate of 10%\n\nto modernize the tax system and improve revenue collection in line with international recommendations.\n\n- The fiscal framework also includes withholding taxes on dividends (10 –15%),\n\ninterest (10%), royalties (10%), and technical service fees (15%), indicating a relatively defined and organized tax structure.\n\n- The tax system incorporates multiple regimes (general and simplified) and\n\nprovides incentives such as tax exemptions, reduced import duties, and deductions to support investment and small businesses.\n\n- However, the effectiveness of tax policies is limited by weak administrative\n\ncapacity, tax evasion, and a large informal sector, resulting in low revenue efficiency and continued reliance on indirect taxation and external financial support. https://www.globalexpansion.com/hubfs/Countrypedia%20PDFs/In%20use/S ao%20Tome%20and%20Principe%20 -%20Global%20Employer%20Guide.pdf https://www.britacom.org/zt/ThemeDay/Tenth/SEMINAR/202510/P0202510 21566751498936.pdf",
-          "references": [
-            "https://www.britacom.org/zt/ThemeDay/Tenth/SEMINAR/202510/P0202510",
-            "https://www.globalexpansion.com/hubfs/Countrypedia%20PDFs/In%20use/S",
-            "https://www.imf.org/en/Countries/STP"
-          ]
+          "title": "Tax Policies",
+          "content": "São Tomé and Príncipe has a developing tax system with a 10% VAT and progressive income tax rates up to 25%. While tax incentives exist for investors, weak administrative capacity and a large informal sector reduce tax efficiency."
         },
         {
           "number": "2.1.4",
-          "title": ". General political issues",
-          "slug": "2-1-4-general-political-issues",
-          "content": "São Tomé and Príncipe faces several governance and institutional challenges despite maintaining a generally democratic system. Key concerns include limited government accountability , as reflected in reported cases of police abuse and delayed or incomplete investigations into misconduct.\n\n- Freedom of expression is constitutionally guaranteed and generally respected;\n\nhowever, media independence is constrained by political influence, self - censorship, and limited access to official information , particularly in state - owned media.\n\n- The country experiences weak transparency and information accessibility ,\n\nwith journalists reporting difficulties in obtaining official data and concerns over biased media coverage favoring the ruling coalition.\n\n- Although labor laws formally guarantee rights such as unionization and\n\ncollective bargaining, enforcement remains weak , with limited inspections, lack of penalties, and ineffective protection against labor violations.\n\n- A significant structural issue is the large informal sector (estimated at around\n\n68% of the workforce) , which undermines regulatory effectiveness, tax collection, and overall economic governance.\n\n- More broadly, institutional capacity constraints , including limited human\n\nresources, weak enforcement mechanisms, and insufficient regulatory oversight, continue to affect policy implementation and governance efficiency. rights -practices/sao -tome -and-principe  2024",
-          "references": [
-            "https://www.state.gov/reports/2024"
-          ]
+          "title": "Political Challenges",
+          "content": "The country faces governance challenges including limited transparency, weak enforcement of laws, corruption, and a large informal sector. Media independence is constrained and access to public information is limited."
         },
         {
           "number": "2.1.5",
-          "title": ". Change in Leadership",
-          "slug": "2-1-5-change-in-leadership",
-          "content": "- São Tomé and Príncipe transitioned from a one -party state (1975 –1991) to a\n\nmulti -party democracy with multiple peaceful power transfers.\n\n- Key recent changes: 2016 presidential election dispute; 2018 legislative\n\nelections led to coalition government formation; 2020 legislation prevented citizens born abroad from running for president, targeting ADI party leader Patrice Trovoada.",
-          "references": []
-        },
-        {
-          "number": "2.1.6",
-          "title": ". Regulations",
-          "slug": "2-1-6-regulations",
-          "content": "- Electoral Laws: Generally fair, though implementation suffers from limited\n\nresources and staff.\n\n- Legislative Actions: National Assembly enacts laws affecting elections and\n\ngovernance, such as restricting presidential candidacy for citizens born abroad and appointing election commissioners.\n\n- Government Transparency: Access to information is partially available; no\n\nspecific law guarantees full transparency.\n\n- Judiciary: Laws provide judicial independence, but political influence and\n\ncorruption remain concerns.",
-          "references": []
-        },
-        {
-          "number": "2.1.7",
-          "title": ". Political Trends",
-          "slug": "2-1-7-political-trends",
-          "content": "- Multiparty Competition: Free and vigorous competition among ADI, MLSTP -\n\nPSD, PCD -UDD -MDFM, and other parties, despite occasional factional splits.\n\n- Democratic Stability: Multiple peaceful democratic transitions demonstrate\n\nresilience, with real opportunities for opposition parties.\n\n- Civil Society: NGOs, including human rights and governance organizations,\n\noperate freely, though underfunded. Challenges:  Corruption, weak institutions, societal discrimination against women and LGBT+ groups, and limited enforcement capacity for social and economic regulations. world/2023",
-          "references": [
-            "https://freedomhouse.org/country/sao"
-          ]
+          "title": "Political Stability",
+          "content": "Despite past instability, the country has experienced peaceful democratic transitions. However, coalition governments and institutional capacity issues continue to pose risks."
         }
-      ],
-      "content": "",
-      "references": []
+      ]
     },
+
     {
       "number": "2.2",
-      "title": "Economical",
-      "slug": "2-2-economical",
+      "title": "Economic",
+      "slug": "2-2-economic",
+      "content": "",
       "subsections": [
         {
           "number": "2.2.1",
           "title": "Inflation",
-          "slug": "2-2-1-inflation",
-          "content": "São Tomé and Príncipe experiences relatively high but declining inflation, reaching approximately 9.5% in January 2026 , down from 10.3% in December 2025, marking the lowest level since early 2022.\n\n- Despite recent improvements, inflation remains elevated compared to global\n\naverages, reflecting ongoing cost -of-living pressures.\n\n- Historically, inflation has been high and volatile , averaging around 14.5% since\n\n1997 , with extreme fluctuations ranging from a peak of 86.8% to lows near",
-          "references": []
-        }
-      ],
-      "content": "",
-      "references": []
-    },
-    {
-      "number": "3.5",
-      "title": "%, indicating structural instability in price levels.",
-      "slug": "3-5-indicating-structural-instability-in-price-levels",
-      "subsections": [
+          "content": "Inflation remains relatively high but is declining, reaching around 9–10% in 2026. Historically, inflation has been volatile, affecting purchasing power and economic stability."
+        },
         {
           "number": "2.2.2",
-          "title": ". Interest rate",
-          "slug": "2-2-2-interest-rate",
-          "content": "- The benchmark interest rate in São Tomé and Príncipe is approximately 10% ,\n\nreflecting a relatively high cost of borrowing in the economy.\n\n- Historically, interest rates have remained elevated, averaging around 14.3%\n\nsince 1998 , with significant volatility ranging from a peak of 29.5% to a low of 9%, indicating periods of monetary instability.\n\n- The relatively high interest rate is primarily used as a tool to control inflation ,\n\nwhich has been persistently high in the country.\n\n- However, elevated borrowing costs may limit private investment and\n\neconomic expansion , particularly in a small and developing economy. rate",
-          "references": [
-            "https://tradingeconomics.com/sao"
-          ]
+          "title": "Interest Rate",
+          "content": "Interest rates are relatively high at around 10%, reflecting efforts to control inflation. However, this limits access to financing and reduces private sector investment."
         },
         {
           "number": "2.2.3",
-          "title": ". Exchange rate",
-          "slug": "2-2-3-exchange-rate",
-          "content": "- The São Tomé and Príncipe dobra (STN) is relatively weak, with an exchange\n\nrate of approximately 21.4 STN per USD (March 2026) .\n\n- In the short term, the currency has shown slight depreciation (around 2.3%\n\nover the past month) , indicating ongoing pressure on the local currency.\n\n- However, over the past year, the dobra has appreciated by approximately",
-          "references": []
-        }
-      ],
-      "content": "- In Sao Tome and Principe, the main components of the Consumer Price Index\n\nare: Food & Non -alcoholic Beverages (73% of the total weight), Housing & Utilities (6%) and Transport (4%). Household Contents, Equipment & Maintenance accounts for 4%, Alcoholic Bev erages & Tobacco for 4%, and Clothing & Footwear for 3%. Others include: Communications (2%), Restaurants & Hotels (2%), Miscellaneous Goods & Services (2%), Recreation & Culture (1%), Education (0.44%), and Health (0.41%). Overall, while inflation is sho wing signs of stabilization, it continues to pose a key economic challenge affecting purchasing power and economic stability.",
-      "references": [
-        "https://tradingeconomics.com/sao"
-      ]
-    },
-    {
-      "number": "6.5",
-      "title": "% , suggesting a degree of medium -term stabilization.",
-      "slug": "6-5-suggesting-a-degree-of-medium-term-stabilization",
-      "subsections": [
+          "title": "Exchange Rate",
+          "content": "The local currency (STN) is pegged to the euro, providing monetary stability but limiting policy flexibility. The economy relies heavily on foreign reserves."
+        },
         {
           "number": "2.2.4",
-          "title": ". Economic Growth",
-          "slug": "2-2-4-economic-growth",
-          "content": "- São Tomé and Príncipe recorded modest economic growth of approximately",
-          "references": []
-        }
-      ],
-      "content": "- The exchange rate is supported by a currency peg to the euro , which helps\n\nmaintain stability and control inflation but increases dependence on external reserves and limits monetary policy flexibility.\n\n- Overall, while the exchange rate shows relative stability, it remains\n\nvulnerable to external shocks and foreign exchange constraints. 2026",
-      "references": [
-        "https://tradingeconomics.com/sao"
-      ]
-    },
-    {
-      "number": "1.7",
-      "title": "% in 2024 , reflecting a slight recovery from 0.5% in 2023, but remaining",
-      "slug": "1-7-in-2024-reflecting-a-slight-recovery-from-0-5-in-2023-but-remainin",
-      "subsections": [
+          "title": "Economic Growth",
+          "content": "Economic growth remains modest (around 1.7%) and below historical averages. The economy is small and heavily dependent on agriculture, tourism, and foreign aid."
+        },
         {
           "number": "2.2.5",
-          "title": ". Unemployment rate",
-          "slug": "2-2-5-unemployment-rate",
-          "content": "- Unemployment in São Tomé and Príncipe remains relatively stable, averaging\n\naround 9–10% between 2020 and 2025 , with only slight fluctuations over time.\n\n- While there was a modest decline from approximately 9.7% in 2020 to around",
-          "references": []
+          "title": "Unemployment",
+          "content": "Unemployment averages around 9–10%, but a large informal sector dominates the labor market, reducing job stability and productivity."
         }
-      ],
-      "content": "below its historical average of around 4.1%.\n\n- The economy is very small , with a GDP of approximatley $0.76 billion  and low\n\nincome levels (GDP per capita ≈ $1,365), highlighting its developing status.\n\n- Economic activity is largely concentrated in agriculture (especially cocoa) and\n\ntourism , with declining cocoa production due to droughts and mismanagement affecting overall growth performance.\n\n- The country is increasingly dependent on foreign aid  and highly vulnerable to\n\nexternal shocks, particularly fluctuations in global food and fuel prices.\n\n- Political instability remains a potential risk that could negatively impact\n\neconomic growth and foreign direct investment.\n\n- However, the discovery of oil reserves in the Gulf of Guinea  presents a\n\npotential long -term opportunity to boost economic growth, if successfully developed. annual",
-      "references": [
-        "https://tradingeconomics.com/sao"
       ]
     },
-    {
-      "number": "9.0",
-      "title": "% in 2022, unemployment levels have since remained largely unchanged,",
-      "slug": "9-0-in-2022-unemployment-levels-have-since-remained-largely-unchanged",
-      "subsections": [],
-      "content": "indicating limited job creation.\n\n- A key structural challenge is the large informal sector (estimated at around\n\n68% of the workforce) , which distorts official unemployment figures and reflects widespread underemployment and job insecurity.\n\n- As a result, the labor market is characterized by low productivity, weak job\n\nquality, and limited formal employment opportunities , despite relatively stable unemployment rates. https://data.worldbank.org/indicator/SL.UEM.TOTL.ZS?end=2025&locations=ST&sta rt=2020&view=chart  2025",
-      "references": [
-        "https://data.worldbank.org/indicator/SL.UEM.TOTL.ZS?end=2025&locations=ST&sta"
-      ]
-    },
+
     {
       "number": "2.3",
       "title": "Social",
       "slug": "2-3-social",
+      "content": "",
       "subsections": [
         {
           "number": "2.3.1",
           "title": "Demographics",
-          "slug": "2-3-1-demographics",
-          "content": "- Capital:  São Tomé\n\n- Total Population:  247,000\n\n- Coastline:  209 km around a land area of 1,001 km2\n\nPopulation of Sao Tome and Principe. 2026 demographics: density, ratios, growth rate, clock, rate of men to women.",
-          "references": [
-            "https://www.wacaprogram.org/country/sao"
-          ]
+          "content": "The population is approximately 247,000, with steady annual growth of about 2%. The country has a young and expanding population."
         },
         {
           "number": "2.3.2",
-          "title": "General country information",
-          "slug": "2-3-2-general-country-information",
-          "content": "- Full name of country:  Democratic Republic of São Tomé and Principe\n\n- Region:  Africa\n\n- Official language:  Portuguese\n\n- Nationality:  Sao Tomean(s) (noun), Sao Tomean (adjective)\n\n- Land area:  964 sq km (372 sq miles)\n\n- National anthem:  \"Independencia total\" (Total Independence), by Alda Neves\n\nDa Graca Do Espirito Santo/Manuel Dos Santos Barreto De Sousa E Almeida\n\n- National holiday:  Independence Day, July 12 (1975)\n\n- Time zone:  UTC +0\n\n- Flag:  The flag of the Democratic Republic of São Tomé and Príncipe consists\n\nof a horizontal triband (green -yellow -green) design with a scarlet isosceles triangle based on the hoist (left) side. The central yellow band is one and a half times wider than the other two green bands. In the center stripe are two five-pointed black stars, which represent the two islands. Symbolically, the color red stands for the country’s str uggle for freedom and independence. The other colors —black, yellow, and green —are pan -African colors.\n\n- Motto:  “Unidade, Disciplina, Trabalho” (Unity, Discipline, Work)\n\n- Independence:  July 12, 1975 (from Portugal)\n\n- Government type:  semi -presidential republic\n\n- Suffrage:  18 years of age; universal\n\nhumanities/sao -tome -and-principe ### 2.3.2.1 — People\n\n- Nationality: Noun and adjective --Sao Tomean(s).\n\n- Population (2026 est.): 247,000\n\n- Annual growth rate (2026 est.):  2.0-2.1%.\n\n- Ethnic groups: Mixed African, Portuguese -African.\n\n- Religions: Christian (Roman Catholic, Evangelical Protestant, Seventh -day\n\nAdventist) 80%.\n\n- Language: Portuguese (official).\n\n- Education: Literacy (census 2001) --68.1%. Years compulsory --to secondary\n\nlevel.\n\n- Health: Life expectancy (2008 est.) --68 yrs. Infant mortality rate (2008 est.) --",
-          "references": [
-            "https://www.ebsco.com/research"
-          ]
-        }
-      ],
-      "content": "",
-      "references": []
-    },
-    {
-      "number": "38.36",
-      "title": "/1,000.",
-      "slug": "38-36-1-000",
-      "subsections": [],
-      "content": "- Work force (by household, 2000 UN Development Program est.):\n\nAgriculture --15.3%;  industry, commerce, services --36.5%; government --",
-      "references": []
-    },
-    {
-      "number": "11.5",
-      "title": "%.",
-      "slug": "11-5",
-      "subsections": [
-        {
-          "number": "2.3.2",
-          "title": ".2 Demographics and population",
-          "slug": "2-3-2-2-demographics-and-population",
-          "content": "- Population growth:\n\nSão Tomé and Príncipe's population is growing steadily at about 2.0 -2.1% annually, reaching around 247,000 in 2026 from 242,000 in 2025. Growth Drivers\n\n- High fertility rates (around 3.95 children per woman) and a youthful\n\ndemographic fuel natural increase of about 5,000 people yearly, outpacing net migration losses of roughly 900.\n\n- This continues a decades -long trend from 2.0% in the 1990s to peaks near",
-          "references": []
-        }
-      ],
-      "content": "2017.state.gov/outofdate/bgn/saotomeandprincipe/106168.htm",
-      "references": [
-        "https://2009"
-      ]
-    },
-    {
-      "number": "2.7",
-      "title": "% in the 1970s, with density rising to 258 people per km².",
-      "slug": "2-7-in-the-1970s-with-density-rising-to-258-people-per-km",
-      "subsections": [
-        {
-          "number": "2.3.2",
-          "title": ".3 Future Projections",
-          "slug": "2-3-2-3-future-projections",
-          "content": "- Projections show sustained growth to 268,000 by 2030 and 380,000 by 2050\n\nat 1.6 -2.0%, shifting toward an aging profile with median age climbing from",
-          "references": []
-        }
-      ],
-      "content": "",
-      "references": []
-    },
-    {
-      "number": "24.0",
-      "title": "to 28.4 years.",
-      "slug": "24-0-to-28-4-years",
-      "subsections": [
-        {
-          "number": "24.0.0",
-          "title": "Details",
-          "slug": "24-0-details",
-          "content": "### 2.3.2.4 — Age distribution:\n\n- São Tomé and Príncipe has a youthful population with a median age around",
-          "references": []
-        }
-      ],
-      "content": "Urbanization accelerates, hitting 70% by 2030, pressuring infrastructure amid Vision 2030 goals for sustainable development.",
-      "references": []
-    },
-    {
-      "number": "20.3",
-      "title": "20.5 years, reflecting a classic expansive pyramid typical of developing",
-      "slug": "20-3-20-5-years-reflecting-a-classic-expansive-pyramid-typical-of-deve",
-      "subsections": [
-        {
-          "number": "2.3.2",
-          "title": ".5 Broad Age Groups",
-          "slug": "2-3-2-5-broad-age-groups",
-          "content": "The population splits into three main categories based on recent 2025 -2026 estimates for roughly 236,000 -240,000 people .\n\n- 0-14 years (youth): 37.8 -42.4% (about 90,000 -100,000 people), with the\n\nlargest shares in 0 -4 (13.2%), 5 -9 (12.2%), and 10 -14 (12.1%) groups.\n\n- 15-64 years (working age): 58.3 -68.4%, peaking in younger adults like 15 -19\n\n(11.5%) and declining gradually to 1 -2% per group in 50s -60s.\n\n- 65+ years (elderly): 3.9 -7.4%, with low concentrations (under 1% per 5 -year\n\nband) and a slight female skew. Statistics | 15 Daily Births | Population Pyramids ### 2.3.2.6 — Dependency Insights\n\n- A high young -age dependency ratio (64.9%) underscores needs for education\n\nand youth jobs, while old -age dependency remains low at 6.7%. This structure supports Vision 2030 goals like human capital investment. Population of Sao Tome and Principe. 2026 demographics: density, ratios, growth rate, clock, rate of men to women. Sao Tome and Principe Population Pyramid 2025 - Demographics & Birth Statistics | 15 Daily Births | Population Pyramids",
-          "references": []
+          "title": "Population Structure",
+          "content": "Around 38–42% of the population is under 15 years old, indicating a high dependency ratio and strong demand for education and employment opportunities."
         },
         {
           "number": "2.3.3",
-          "title": "culture lifestyle attitudes",
-          "slug": "2-3-3-culture-lifestyle-attitudes",
-          "content": "- São Tomé and Príncipe residents embrace a relaxed \"Leve Leve\" lifestyle,\n\nemphasizing simplicity, community harmony, and resilience shaped by their island paradise and Luso -African heritage . ### 2.3.3.1 — Core Values\n\n- People prioritize elder respect, social unity, and strength in adversity, rooted\n\nin colonial and slavery histories that fostered mutual support . Peaceful coexistence prevails in a mestizo society blending Portuguese, African, and creole influences, with Christianity dominant but coexisting with traditional practices. Leve Leve Lifestyle in São Tomé: Culture, Gastronomy & Traditions São Tomé and Príncipe Values | NationValues São Tomé and Príncipe - Freedom of Thought Report",
-          "references": []
-        },
-        {
-          "number": "2.3.3",
-          "title": ".2 Daily Attitudes",
-          "slug": "2-3-3-2-daily-attitudes",
-          "content": "- A laid -back approach —\"go slowly\" —defines routines, with strong family\n\nbonds, communal living in rural areas, and growing gender equality in modern sectors.\n\n- Lifestyle revolves around fresh seafood, tropical fruits, music/dance like\n\ntchiloli, and festivals celebrating independence or saints, reflecting optimism and cultural pride The Culture Of Sao Tome And Principe",
-          "references": []
+          "title": "Culture and Lifestyle",
+          "content": "The country follows a relaxed 'Leve Leve' lifestyle, emphasizing simplicity and community. Culture is influenced by African and Portuguese traditions."
         },
         {
           "number": "2.3.4",
-          "title": "Educational levels",
-          "slug": "2-3-4-educational-levels",
-          "content": "- Educational Outcomes and Human Capital\n\n- In 2024, São Tomé and Príncipe, like many other African countries, is facing a\n\nlearning crisis. In sub -Saharan Africa, learning poverty, defined as the share of children unable to read and understand an age -appropriate text by age 10, is estimated  at 89 percent  by the World Bank,\n\n- In 2023, São Tomé and Príncipe has made strides in education, with primary\n\nenrollment near 98% and adult literacy at 93%, but challenges persist in completion rates and quality. ### 2.3.4.1 — Literacy and Access\n\n- Adult literacy rose from 74.9% a decade ago to 93% by 2023, driven by the\n\nQuality Education for All Project since 2014, which boosted teacher training and infrastructure.\n\n- Youth (15 -24) literacy nears universality, though 2% have no formal\n\neducation and 36% incomplete primary, per older EPDC data. ### 2.3.4.2 — Enrollment Breakdown\n\n- Primary completion stands at 87%, with 96% net enrollment, but secondary\n\ntransition dips below 60% and completion lower, especially in rural areas.\n\n- The 6 -3-3 system sees high primary access but dropouts due to poverty;\n\nhigher education remains limited, aligning with Vision 2030 human capital goals. Sao Tomeans segment their education into pre -primary, primary, secondary and tertiary levels, and while education is legally mandated for children between 6 and 14 years old, many children, particularly young girls, face challenges in attending school. Oft en, people encourage them to stay home and learn the traditional role of women rather than skills to join the workforce. EPDC_NEP_2018_SaoTomeandPrincipe.pdf Improving Education in Sao Tome and Principe - The Borgen Project Addressing Comprehensive Educational Challenges in São Tomé and Príncipe – Broken Chalk https://borgenproject.org/womens -rights -in-sao-tome -and-principe/",
-          "references": [
-            "https://borgenproject.org/womens",
-            "https://www.iicba.unesco.org/en/sao"
-          ]
+          "title": "Education",
+          "content": "Primary education enrollment is high, and literacy rates have improved. However, challenges remain in secondary education completion and overall quality."
         },
         {
           "number": "2.3.5",
-          "title": "Buying habits",
-          "slug": "2-3-5-buying-habits",
-          "content": "- São Tomé and Príncipe residents prioritize essential goods amid economic\n\npressures, with household consumption dominating at 81.4% of GDP and heavy reliance on imported food, fuel, and staples. Spending Priorities\n\n- High inflation (peaking above 20% recently) squeezes purchasing power,\n\ndriving focus on necessities like rice, fish, vegetables, and price -controlled basics, with government exemptions aiding affordability.\n\n- Limited disposable income (GDP per capita ~$2,400) favors informal markets,\n\nlocal produce, and subsistence in rural areas, while urban households allocate more to utilities and remittances.  Consumption Patterns\n\n- Imports dwarf exports (35% vs. 3.6% of GDP), reflecting import -dependent\n\nhabits for consumer goods, with low savings and debt distress curbing luxury or durable purchases.\n\n- Emerging tourism boosts demand for services, but inequality (Gini 40.7)\n\nmeans poorer 44.6% live near poverty lines, emphasizing value -for-money and community sharing. CDP-PL-2025 -STP.pdf São Tomé and Príncipe - STP",
-          "references": []
+          "title": "Consumer Behavior",
+          "content": "Consumers prioritize essential goods due to low income levels and high reliance on imports. Informal markets dominate purchasing habits."
         },
         {
           "number": "2.3.6",
-          "title": "Religion",
-          "slug": "2-3-6-religion",
-          "content": "principe.html",
-          "references": [
-            "https://www.worldatlas.com/articles/religion"
-          ]
-        },
-        {
-          "number": "2.3.7",
-          "title": "Leaders and Cabinet Members",
-          "slug": "2-3-7-leaders-and-cabinet-members",
-          "content": "- Type:  Republic.\n\n- Independence:  July 12, 1975 (from Portugal).\n\n- Constitution:  November 5, 1975; revised September 1990, following a\n\nnational referendum, -revised again January 2003.\n\n- Branches:  Executive --president and prime minister. Legislative --National -\n\nAssembly. Judicial --Supreme Court.\n\n- Administrative subdivisions:  Seven counties, six on Sao Tome and one on\n\nPrincipe.\n\n- Political parties:  Movement for the Liberation of Sao Tome and Principe\n\n(MLSTP), Party of -Democratic Convergence (PCD), Independent Democratic Action (ADI), Democratic Movement Force of Change (MDFM), Christian Democratic Front -Socialist Union Party (FDC -PSU), Santomean Wo rkers Party (PTS); Popular Party of Progress (PPP), and National Union for Democracy and Progress (UNDP).\n\n- Suffrage:  Universal adult.\n\n2017.state.gov/outofdate/bgn/saotomeandprincipe/106168.htm Government Last Updated:  2/9/2026\n\n- President:  Carlos Manuel VILA NOVA\n\n- Prime Minster:  Americo RAMOS\n\n- Min. of Agriculture, Fisheries, & Rural Development:  Nilton Garrido de\n\nSousa PONTES\n\n- Min. of Defense & Home Affairs:  Horacio Castro da Trindade DE SOUSA,  Brig.\n\nGen.\n\n- Min. of Economy & Finance:  Gareth Haddad do Espirito Santo\n\nGUADALUPE,  Dr.\n\n- Min. of Education, Culture, Science, & Higher Education:  Isabel Maria\n\nCorreia Viegas DE ABREU,  Dr.\n\n- Min. of Environment, Youth, & Sustainable Tourism:  Nilda Borges DA\n\nMATA,  Dr.\n\n- Min. for Foreign Affairs, Cooperation, & Communities : Ilza Maria dos Santos\n\nAmado VAZ,  Dr.\n\n- Min. of Health:  Celso Vaz do Nascimento MATOS,  Dr.\n\n- Min. of Infrastructure & Natural Resources:  Nelson Mario de Carvalho Rosa\n\nCARDOSO\n\n- Min. of Justice, Parliamentary Affairs, & Women's Rights:  Vera Maria\n\nAssuncao Gomes CRAVID,  Dr.\n\n- Min. of Labor, Solidarity, & Social Security:  Joucerli Tiny dos RAMOS,  Dr.\n\n- Governor, Bank of Sao Tome & Principe:  Americo BARROS\n\n- Attorney General:  Carlos STOCK\n\ntome -and-principe/",
-          "references": [
-            "https://2009",
-            "https://www.cia.gov/resources/world"
-          ]
-        },
-        {
-          "number": "2.3.8",
-          "title": "Saõ Tóme and Príncipe Holidays and Festivals",
-          "slug": "2-3-8-sa-t-me-and-pr-ncipe-holidays-and-festivals",
-          "content": "- International Workers’ Day, or Labor Day as it is locally known, takes place on\n\nMay 1 every year\n\n- On July 12, São Tomé e Príncipe celebrates the attainment of full sovereignty\n\nfrom the colonial rule of the Portuguese. This public holiday is filled with displays of tradition and culture in many different cities.\n\n- Every year on November 26, São Tomé celebrates the national holiday of\n\nArgel Accord Day. Prior to the nation being granted independence, the Argel Accords\n\n- São Tomé has a large Christian population, accounting for about 80 percent\n\nof people in the country. Understandably then, Christian religious holidays like Christmas Day on December 25 are a big deal. Christmas marks the birth of the Christian messiah Jesu s. The day is celebrated by going to mass and the enjoyment of feasts with friends and family. The day has taken on a cultural aspect as well as it is considered a non -working day and most people in the country, religious or not, partake in the festivities .\n\n- In São Tomé and Príncipe, the weekend days are Saturday and Sunday and\n\nthe Workweek is from Monday to Friday\n\n- Globally, some progress on women’s rights has been achieved. In Sao Tome\n\nand Principe, the adolescent birth rate is 0.4 per 1,000 women aged 15 –19 as of 2018, down from 93.47 per 1,000 in 2017. In 2019, 57.7% of women of reproductive age (15 -49 years) had their need for family planning satisfied with modern methods. principe/festivals -and-events https://data.unwomen.org/country/sao -tome -and-principe",
-          "references": [
-            "https://data.unwomen.org/country/sao",
-            "https://www.iexplore.com/articles/travel"
-          ]
-        },
-        {
-          "number": "2.3.9",
-          "title": ". Health and Healthcare System",
-          "slug": "2-3-9-health-and-healthcare-system",
-          "content": "### 2.3.9.1 — What is healthcare in Sao Tome and Principe like? Health consciousness:\n\n- São Tomé and Príncipe shows mixed health consciousness, with rising\n\nawareness of some risks but persistent unhealthy behaviors amid NCD program efforts. Key Trends (2008 -2019)\n\n- Overweight/obesity climbed to 51%, especially among women (58.1%),\n\nsignaling low focus on diet control despite better fruit/vegetable intake (down to 53.3%).\n\n- Physical inactivity doubled to 30.9%, with women more affected, while\n\ntobacco use (8.8%) and hypertension (33.5%) stayed stable.\n\n- Positive shifts include reduced frequent alcohol (24.8%) and diabetes (1.2%),\n\nmore among men, tied to partial NCD integration in primary care. Awareness Factors\n\n- Higher education links to less alcohol and poor diets but more obesity,\n\nsuggesting nutrition knowledge gaps in urban/educated groups.\n\n- Limited campaigns on activity, tobacco, and diet hinder progress, per WHO\n\nreports, despite STEPS surveys boosting data -driven interventions. What about the medical facilities?\n\n- Medical facilities in São Tomé and Príncipe are extremely limited. There is\n\none hospital in the country on the island of São Tomé, Hospital Central Ayres de Menezes, phone number 239 2 -221-222. A few clinics also exist, but the service provided is very bas ic. For all but minor medical needs, it is necessary to travel to Libreville (Gabon), Lisbon (Portugal), or elsewhere. You should carry an ample supply of properly labeled prescription drugs and other medications with you; an adequate supply of prescriptio n or over -the- counter drugs in local stores or pharmacies is generally not available.\n\n- Tap water may not be potable and you should drink and cook with bottled\n\nwater only. Schistosomiasis, also known as bilharzia, is endemic to São Tomé and Príncipe. Schistosomiasisis a parasite that can penetrate intact skin of those swimming or bathing in f resh water from lakes, rivers and streams. It is recommended to avoid contact with untreated fresh water to prevent schistosomiasis infection. https://www.countryreports.org/country/SaoTomeandPrincipe/health.htm Frontiers | Trends in bio -behavioural risk factors of non -communicable diseases among adults in Sao Tome and Principe ### 2.3.9.2 — The Four Most Common Diseases in Sao Tome and Principe: 1. Tuberculosis (TB) is a bacterial disease easily communicable in the first few weeks of visible symptoms. 2. Malaria, spread through mosquitoes, is an endemic for most impoverished African countries, including Sao Tome Principe. 3. Cholera is actively transmitted in many impoverished countries, including Sao Tome and Principe. 4. Necrotizing cellulitis is a rare disease, but an outbreak earlier this year has left Sao Tome and Principe vulnerable. Note:  More than 1,300 cases of necrotizing cellulitis, a  severe skin infection  known for intense pain and swollen tissues, have been reported since September 2016. To date, every health district in the country has reported cases, and the country’s 190,000 inhabitants are at risk. Cases have been increasing but no deaths directly linked to the disease have been recorded. ### 2.3.9.3 — Healthcare Infrastructure in São Tomé and Príncipe 1.Hospital Central de São Tomé (São Tomé Central Hospital)\n\n- Location: São Tomé, São Tomé and Príncipe\n\n- Specialties: General Surgery, Pediatrics, Obstetrics, Emergency Care\n\n- Accreditations: National Health System Certified\n\n- Number of Beds: 200+\n\n- Number of Doctors: 80+\n\n2. Hospital Dr. Ayres de Menezes\n\n- Location: São Tomé, São Tomé and Príncipe\n\n- Specialties: Cardiology, Internal Medicine, Dermatology, Ophthalmology\n\n- Accreditations: ISO Certified\n\n- Number of Beds: 150\n\n- Number of Doctors: 60+\n\n3. Hospital de Caué\n\n- Location: Caué, São Tomé and Príncipe\n\n- Specialties: General Medicine, Surgery, Maternity Services, Pediatrics\n\n- Accreditations: National Health System Certified\n\n- Number of Beds: 100+\n\n- Number of Doctors: 40+\n\n4. Ospedale de São João\n\n- Location: São João, São Tomé and Príncipe\n\n- Specialties: Urology, Gastroenterology, Dermatology\n\n- Accreditations: National Health System Certified\n\n- Number of Beds: 80+\n\n- Number of Doctors: 35+\n\nprincipe/ https://www.borgenmagazine.com/common -diseases -in-sao-tome -and-principe/",
-          "references": [
-            "https://www.borgenmagazine.com/common",
-            "https://www.countryreports.org/country/SaoTomeandPrincipe/health.htm",
-            "https://www.mymedicplus.com/blog/best"
-          ]
-        },
-        {
-          "number": "2.3.10",
-          "title": ". Transportation and Daily Life",
-          "slug": "2-3-10-transportation-and-daily-life",
-          "content": "Taxis and Car Rental\n\n- Car rentals are available in the country and there are a few international\n\ncompanies that have a presence but the more popular options are often through local companies, which are cheaper and offer equally reliable services. The network of roads in the cou ntry is extensive, adding up to about 230 miles. That said, most of the roads are in poor condition and several are unpaved. If travelers are intent on renting a vehicle, they should consider a four -wheel drive, which is far better equipped to deal with th e unpredictable nature of many routes in the country.\n\n- There are a few private taxi services in the country, mainly operating the\n\nroute between São Tomé International Airport and the city center. There are also shared taxis in most of the cities, which are identifiable by their bright yellow color and can simp ly be flagged down at the side of the road. Journeys within cities have fixed prices and travelers simply need to pass the money to the front of the taxi at some point during the journey. The prices of journeys outside of the city need to be negotiated bef orehand. Trains and Buses\n\n- São Tomé once had a thriving railway system but this network has since been\n\nabandoned. Today, there are no rail services in the country and while sightseeing, travelers may even stumble upon the ruins of a few old railway stations and abandoned carriages.\n\n- There are no private bus companies or coach services in the country. The\n\nonly way to navigate between regions is to take a minibus taxi, which can be flagged down in cities or found waiting at communal taxi ranks. The fares for long distance trips should b e agreed upon prior to departure as there are no set routes. Travelers who wish to navigate their way between islands can do so either by ferry or local airline. principe/transportation Renting a Car in Sao Tome Island with No Security Deposit\n\n- When you pick up the car, you'll often be required to leave a deposit on your\n\ncredit card or debit card. Deposits vary significantly subject to the size of the vehicle and the excess amount. Car rental Security deposits in Sao Tome Island can be anywhere b etween £100 and £2,500. and-principe/sao -tome -island",
-          "references": [
-            "https://www.iexplore.com/articles/travel",
-            "https://www.stressfreecarrental.com/en/car"
-          ]
-        },
-        {
-          "number": "2.3.11",
-          "title": "Current Situation of Existing Inequalities in São Tomé and Príncipe",
-          "slug": "2-3-11-current-situation-of-existing-inequalities-in-s-o-tom-and-pr-nc",
-          "content": "Post-Independence Evolution (1975 -Present) - After independence in 1975, São Tomé and Príncipe struggled to address historical inequalities. The Forros, composed of approximately 50% of the population, continued to dominate political and economic life, while the serviçais (30%) and Angolares (10%) re mained marginalized. Economic Disparities: The 2021 Annual Report by the Central Bank of São Tomé and Príncipe noted high poverty rates, with about half the population living below the poverty line, particularly in rural areas. The decline of cocoa production exacerbated economic challenges, leavin g rural communities —primarily comprised of serviçais and Angolares —with limited access to infrastructure and economic opportunities. Urban areas, where Forros are more concentrated, enjoy better access to services and higher income levels, as highlighted i n a 2012 study by the São Tomé and Príncipe Institute for Social and Economic Research (INEP), which showed educational and income disparities between forros and other groups. Ethnic and Social Inequalities: Cultural values among the Forro population, such as clientelism and corruption, have been cited as persistent obstacles to development. Serviçais, descendants of contract laborers, often work in informal economies as \"candongueiros\" (informal traders), whi le Angolares, primarily involved in fishing, continue to face challenges due to their geographic isolation in southern areas like São João dos Angolares. The land reforms of the 1990s, supported by the World Bank, aimed to redistribute land to ex -serviçais  but did not entirely alleviate socioeconomic disparities, particularly for rural ex -serviçais and Angolares. Urban -Rural Divide: A significant urban -rural divide exists in the country, with about 60% of the population living in urban areas that have better access to education, healthcare, and economic opportunities. Rural populations, disproportionately comprising serviçais and Ango lares, suffer from higher poverty rates, with a 2020 poverty headcount ratio at $1.90 a day (2011 PPP) standing at 35.6%. This divide is exacerbated by the vulnerability of rural agricultural communities to external shocks, including climate change. Gender and Regional Disparities: A 2019 UNDP report highlights gender inequalities, noting that women in São Tomé and Príncipe have lower literacy rates and limited access to economic opportunities. Regional disparities also persist, particularly with Príncipe being less developed than São Tomé. Rural women, often from serviçais or Angolares backgrounds, face compounded disadvantages due to these intersecting factors.",
-          "references": []
+          "title": "Healthcare",
+          "content": "Healthcare infrastructure is limited, with only one main hospital. Patients often travel abroad for advanced treatment."
         }
-      ],
-      "content": "island nations.",
-      "references": []
+      ]
     },
+
     {
       "number": "2.4",
       "title": "Technological",
       "slug": "2-4-technological",
+      "content": "",
       "subsections": [
         {
           "number": "2.4.1",
-          "title": "Level of Technology at schools",
-          "slug": "2-4-1-level-of-technology-at-schools",
-          "content": "- Technology in schools in São Tomé and Príncipe is still developing. According to\n\nthe World Bank, many schools have limited access to computers and internet, and teachers often lack digital training. However, international organizations like UNICEF and UNESC O are helping improve the situation by introducing digital learning programs, training teachers, and supporting modern education systems. At the university level, institutions such as the University of São Tomé and Príncipe offer technology -related courses , helping students gain digital skills. Overall, technology in education is growing but still faces challenges like infrastructure and access.",
-          "references": []
+          "title": "Technology in Education",
+          "content": "Technology adoption in education is limited but improving through international initiatives and digital learning programs."
         },
         {
           "number": "2.4.2",
-          "title": "Main Challenges",
-          "slug": "2-4-2-main-challenges",
-          "content": "- Limited internet access in schools\n\n- Lack of devices (computers/tablets)\n\n- Teachers need more ICT training\n\n- Weak infrastructure\n\n- Improvements Happening\n\n- Digital classrooms (UNICEF)\n\n- Teacher training programs\n\n- Government digital education strategies\n\n- Growing access to internet\n\nthrough -digital -learning -s%C3%A3o -tom%C3%A9 -and-pr%C3%ADncipe",
-          "references": [
-            "https://www.unicef.org/innocenti/stories/transforming"
-          ]
+          "title": "Infrastructure Challenges",
+          "content": "The country faces limited internet access, lack of devices, and insufficient ICT training for teachers."
         },
         {
           "number": "2.4.3",
-          "title": "Digital Transformation in Sao Tome & Principe",
-          "slug": "2-4-3-digital-transformation-in-sao-tome-principe",
-          "content": "Ranking according to international reports\n\n- When it comes to e -government, Sao Tome and Principe’s position is\n\ndishearteningly low,  ranking 154th globally in e -government  and a dismal 187th in e-participation  according to the UN’s metrics . This reflects not just a deficiency in online service provision  but a systemic lag in harnessing digital tools for governance and citizen engagement. Such rankings show a glaring gap between infrastructure development and the capacity to effectively util ize it for public benefit. by the the United Nations -  Department of Economic and Social Affairs The “Digital State” in São Tomé and Príncipe by end of 2025 :\n\n- While many people rely mainly on mobile phones rather than advanced\n\ntechnologies like computers or broadband internet, reports from the Internet Society indicate that the country has low digital infrastructure capacity and limited internet service options , which affects the quality and availability of technology. Overall, this shows that while technology is growing and becoming more common, it is not yet fully developed or accessible to everyone, especially in rural or low -income areas.\n\n- A total of  154 thousand  cellular mobile connections were active in São Tomé\n\nand Príncipe in late 2025, equivalent to  63.9  percent  of the total population. However, note that some of these connections may only include services such as voice and SMS, and some may  not include access to the internet.\n\n- There were  148 thousand  individuals using the internet in São Tomé and\n\nPríncipe at the end of 2025, when online penetration stood at  61.5  percent .\n\n- São Tomé and Príncipe was home to  73.2  thousand  social media user\n\nidentities in October  2025, equating to  30.3  percent  of the total population. Mobile connections in São Tomé and Príncipe in late 2025:\n\n- Data from  GSMA Intelligence  shows that there were  154 thousand  cellular\n\nmobile connections in São Tomé and Príncipe at the end of 2025.\n\n- GSMA Intelligence’s numbers indicate that mobile connections in São Tomé\n\nand Príncipe were equivalent to  63.9  percent  of the total population in October  2025.\n\n- Looking at trends over time, the number of mobile connections in São Tomé\n\nand Príncipe  increased  by 4,826  (+3.2  percent) between the end of 2024 and the end of 2025. Insights With insights from The  ITU (the International Telecommunication Union), which is the United Nations’ specialized agency for digital technologies &GSMA  a global organization that represents the mobile Communication Industry and its members Another Statistics By the end of 2024 : Based on the Digital Development Dashboard for São Tomé and Príncipe: Connectivity and Access\n\n- Mobile broadband subscriptions: 44.6 per 100 people (2024).\n\n- Mobile phone ownership: 70.9% of individuals (2024).\n\n- Household internet access: No recent data available.\n\nInternet Use\n\n- Individuals using the Internet: 59.1% of the population (2024).\n\n- Fixed broadband traffic: 2.9K GB per subscription (2005 data, no recent\n\nupdates).\n\n- Mobile broadband traffic: 38 GB per subscription (2024).\n\nNetwork Coverage\n\n- Population coverage by mobile networks (2024):\n\n- At least 2G: 97%\n\n- At least 3G: 96%\n\n- At least LTE/WiMAX: 96%\n\n- At least 5G: No data\n\nKey Observations\n\n- São Tomé and Príncipe has high mobile phone ownership and strong mobile\n\nnetwork coverage (almost universal for 2G –LTE).\n\n- Internet use is growing, with over half the population online.\n\n- Broadband traffic data is limited, but mobile broadband usage shows steady\n\ngrowth.\n\n- Household -level internet access data is missing, which makes it harder to\n\nmeasure digital inclusion at the family level. Internet use in São Tomé and Príncipe in Late 2025\n\n- At the time of report production,  Kepios ’s analysis of the latest available data\n\nindicated that there were  148 thousand  internet users in São Tomé and Príncipe in October  2025.\n\n- São Tomé and Príncipe’s internet penetration rate stood at  61.5  percent  of\n\nthe total population at the end of the year.\n\n- Kepios’s analysis of this data indicates that the number of internet users in\n\nSão Tomé and Príncipe  increased  by 2,904  (+2.0  percent) between October  2024 and October  2025.\n\n- And for added perspective, São Tomé and Príncipe’s internet  adoption\n\nrate (i.e. the percentage of the total population that uses the internet) remained  unchanged  during the same period.\n\n- But these user figures also suggest that  93.0  thousand  people in São Tomé\n\nand Príncipe did  not use the internet at the end of 2025, suggesting that 38.5  percent  of the population",
-          "references": []
+          "title": "Digital Adoption",
+          "content": "Mobile penetration is relatively strong, with over 60% of the population connected. Internet usage is growing but remains uneven across regions."
         },
         {
           "number": "2.4.4",
-          "title": "Social media statistics for São Tomé and Príncipe in Late 2025",
-          "slug": "2-4-4-social-media-statistics-for-s-o-tom-and-pr-ncipe-in-late-2025",
-          "content": "- Proprietary analysis  indicates that there were  73.2  thousand  active social\n\nmedia user identities in São Tomé and Príncipe in October  2025.\n\n- For perspective, this figure was equivalent to  30.3  percent  of São Tomé and\n\nPríncipe’s total population at the end of 2025.\n\n- Analysis shows that social media user identities in São Tomé and\n\nPríncipe  increased  by 8,050  (+12.4  percent) between late 2024 and the end of 2025.\n\n- Turning our attention to user demographics, data published in the ad\n\nplanning tools of top social media platforms indicates that there were  72.6  thousand  user identities aged  18 and above  using social media in São Tomé and Príncipe at the end of 2025, which was equivalent to 54.1  percent  of the total population aged  18 and above .\n\n- At that time,  44.7  percent  of São Tomé and Príncipe’s social media user\n\nidentities were  female , while  55.3  percent  were  male .\n\n- And for added context, it may be helpful to know that  49.3  percent  of São\n\nTomé and Príncipe’s total internet user base (regardless of age) used at least one social media platfo Insights Facebook users in São Tomé and Príncipe in Late 2025\n\n- Data published in Meta’s advertising resources indicate\n\nthat Facebook  had 73.2  thousand  users in São Tomé and Príncipe in late 2025.\n\n- It may be useful to know that the company’s data indicates\n\nthat 54.1  percent  of adults aged  18 and above  in São Tomé and Príncipe used Facebook at the end of 2025.\n\n- And for additional context, Facebook’s ad reach in São Tomé and Príncipe\n\nwas equivalent to  49.3  percent  of the local internet user base (regardless of age) in October  2025.\n\n- At the end of 2025,  47.3  percent  of Facebook’s  adult  ad audience in São\n\nTomé and Príncipe was  female , while  52.7  percent  was male . Instagram users in São Tomé and Príncipe in 2026\n\n- Numbers published in Meta’s advertising tools indicate\n\nthat Instagram  had 10.8  thousand  users in São Tomé and Príncipe in late 2025.\n\n- The company’s  regularly revised  figures suggest that Instagram’s ad reach in\n\nSão Tomé and Príncipe was equivalent to  4.5 percent  of the total population at the end of the year.\n\n- However, Meta only allows people aged  13 and above  to use Instagram, so\n\nit’s also worth highlighting that  6.6 percent  of the “eligible” audience in São Tomé and Príncipe used Instagram at the time of report production.\n\n- Meanwhile, data published in the company’s ad tools indicate\n\nthat 8.0 percent  of adults aged 18 and above in São Tomé and Príncipe used Instagram at the end of 2025.\n\n- Similarly, it may be helpful to know that Instagram’s ad reach in São Tomé\n\nand Príncipe at the end of 2025 was equivalent to  7.2 percent  of the local internet user base (regardless of age).\n\n- In late 2025,  43.5  percent  of Instagram’s  adult  ad audience in São Tomé and\n\nPríncipe was  female , while  54.6  percent  was male . Insights TikTok users in São Tomé and Príncipe in Late 2025\n\n- Figures published in TikTok’s advertising resources indicate\n\nthat TikTok  had 62.0  thousand  users aged  18 and above  in São Tomé and Príncipe in late 2025.\n\n- Note that TikTok allows marketers to target TikTok ads to users aged  13 and\n\nabove  via its advertising tools, but these tools only show audience data for users aged  18 and above.\n\n- And for context, TikTok’s figures indicate that TikTok ads\n\nreached  46.2  percent  of all adults aged 18 and above in São Tomé and Príncipe at the end of 2025.\n\n- In late 2025,  30.6  percent  of TikTok’s  adult  ad audience in São Tomé and\n\nPríncipe was  female , whereas  69.4  percent  was male . LinkedIn users in São Tomé and Príncipe in Late 2025:\n\n- Figures published in LinkedIn’s advertising resources indicate\n\nthat LinkedIn  had 15.0  thousand  “members” in São Tomé and Príncipe in late 2025.\n\n- Note that LinkedIn’s advertising tools publish audience reach data based\n\non total registered members, rather than the  monthly active users  that form the basis of the ad reach figures published by most other social media platforms.\n\n- As a result, these LinkedIn figures are not directly comparable with the\n\nfigures for other social media platforms published on this page, or those shown in our  Digital 2026  reports.\n\n- But caveats aside, the company’s own advertising reach figures suggest that\n\nLinkedIn’s audience in São Tomé and Príncipe was equivalent to 6.2 percent  of the total population at the end of 2025.\n\n- LinkedIn’s advertising tools only publish data for users aged  18 and\n\nabove  though, so it may be more representative to state that LinkedIn’s ads reached  11.2  percent  of São Tomé and Príncipe’s population aged 18 and above in late 2025.\n\n- Meanwhile, LinkedIn’s ad reach in São Tomé and Príncipe was equivalent\n\nto 10.1  percent  of the local internet user base (regardless of age) at the end of the year.\n\n- In late 2025,  33.0  percent  of LinkedIn’s ad audience in São Tomé and Príncipe\n\nwas female , while  67.0  percent  was male . Insights",
-          "references": []
-        },
-        {
-          "number": "2.4.5",
-          "title": "Summary",
-          "slug": "2-4-5-summary",
-          "content": "- The Country of Sao Tome and Principe has undergone a TNA ( Technology\n\nNeeds Assessment) that was completed by the end of 2023 to Identify what   kind of technologies are best suited to a country’s specific climate change situation and   assess and analyse the  country’s specific needs, as relates to its specific set of circumstances and utilize this data to set priorities and identify appropriate technologies.\n\n- The Main Findings and Conclusions of the study can be summarized in the\n\nfollowing points:\n\n- Focus sectors: Energy  and Transport , chosen for their high emissions and\n\nstrategic importance.\n\n- São Tomé and Príncipe remains a net carbon sink but faces rising emissions in\n\nenergy and transport.\n\n- Prioritized technologies will guide future mitigation projects and support the\n\ntransition to a low-carbon, climate -resilient economy . The chosen sectors for adaptation were agroforestry and water, and for mitigation, energy and transport. The corresponding prioritised technologies for these sectors were:\n\n- Agroforestry: protected cultivation integrated in greenhouses, sustainable\n\nagricultural land management, agro -silvo -pastoral system\n\n- Water: integrated management of hydrographic basins, water safety plan,\n\nconstruction and maintenance of existing dams and water reservoirs\n\n- Energy: solar photovoltaic power plant, hydroelectric power, efficient\n\nmanagement of the electricity system\n\n- Transport: electric light cars, electric motorcycles, electric public transport\n\nwith photovoltaic roofs in Enviromental too)",
-          "references": []
+          "title": "Digital Limitations",
+          "content": "Digital infrastructure remains weak, especially in rural areas, limiting full participation in the digital economy."
         }
-      ],
-      "content": "",
-      "references": []
+      ]
     },
+
     {
       "number": "2.5",
       "title": "Environmental",
       "slug": "2-5-environmental",
+      "content": "",
       "subsections": [
         {
           "number": "2.5.1",
-          "title": "Overview",
-          "slug": "2-5-1-overview",
-          "content": "- São Tomé and Príncipe is the second smallest country in Africa and is a Small\n\nIsland Developing State. The country faces significant challenges in the face of climate change including land degradation caused by commercial logging, unsustainable agriculture  and competing demands for food, energy, and space, and increasing ocean acidification, coastal floods, and marine degradation\n\n- The NDC identified the most vulnerable sectors as agriculture, fisheries, and\n\nlivestock. Horticultural and vegetable production are highly exposed to extreme weather events, such as floods, droughts, and heavy rains.\n\n- These crops are drastically affected by pests, requiring substantial agricultural\n\ninputs and agrochemicals, which increases land -based waste that ends up in groundwater layers and the sea.\n\n- The country consists of an archipelago with two main islands, São Tomé Island\n\nwhich is 50 km long and 30 km wide, and Príncipe Island which is about 30 km long and 6 km wide. The coastal zone includes the slopes of extinct volcanoes, within which the envir onment is under stress from soil degradation and coastal erosion. A Multi -Sector Investment Plan (MSIP)  was developed for the country which emphasized the need for policy reforms that promote more sustainable and adaptive management of the coastal zones, a new institutional framework for disaster risk management, and a strong community engagement for coastal  protection. Multi -Sector Investment Plan (MSIP)",
-          "references": [
-            "https://www.adaptation"
-          ]
+          "title": "Environmental Overview",
+          "content": "São Tomé and Príncipe is a small island developing state vulnerable to climate change, coastal erosion, and environmental degradation."
         },
         {
           "number": "2.5.2",
-          "title": "WACA Interventions",
-          "slug": "2-5-2-waca-interventions",
-          "content": "- Ongoing activities focus on natural -based solutions through community\n\napproaches and hybrid solutions, when hard solutions are indispensable, beach nourishment, drainage, breakwaters, and coastal and riverbank revetments. On policy interventions, a new law on sand extraction is being supported. Community -based adaptation is a center of the approach in Sao Tome and Principe, including support to schemes for routine maintenance of coastal protection infrastructure in collaboration with district governments. Key agencies\n\n- The Ministry of Infrastructure, Natural Resources and Environment is the lead\n\nagency for coastal resilience efforts. It has established a project implementation unit to coordinate project activities supported by multiple partners.",
-          "references": [
-            "https://www.wacaprogram.org/country/sao"
-          ]
+          "title": "Climate Risks",
+          "content": "The country faces sea-level rise, flooding, and extreme weather events, which impact agriculture, infrastructure, and livelihoods."
         },
         {
           "number": "2.5.3",
-          "title": "Geography",
-          "slug": "2-5-3-geography",
-          "content": "- Location : Western Africa; islands straddling the equator in the Gulf of Guinea\n\nwest of Gabon.\n\n- Area : 1,001 sq. km. (386 sq. mi.); about the size of metropolitan Indianapolis, or\n\none-third the size of Rhode Island.\n\n- Cities : Capital --Sao Tome.  Other cities --Trinidade, Santana, Angolares, Neves,\n\nSanto Antonio.\n\n- Terrain : Two small, volcanic islands.\n\n- Climate : Tropical, with wet and dry seasons, influenced by the mountainous\n\ntopography. The islands of Sao Tome and Principe, situated in the equatorial Atlantic about 300 and 250 kilometres (200 mi. and 150 mi.), respectively, off the northwest coast of Gabon, constitute Africa's smallest country. Both are part of an extinct volcanic mountai n range, which also includes the island of Bioko in Equatorial Guinea to the north and Mount Cameroon on the African west coast. Sao Tome is 50 kilometres (31 mi.) long and 32 kilometres (20 mi.) wide and the more mountainous of the two islands. Its peaks reach 2,024 meters (6,640 ft.). Principe is about 30 kilometres (19 mi.) long and 6 kilometres (4 mi.) wide. Swift streams radiating down the mountains through lush forest and cropland to the sea cross both islands. At sea level, the climate is tropical --hot and humid with average yearly temperatures of about 27oC (80oF) and little daily variation. At the interior's higher altitudes, the average yearly temperature is 20oC (68oF), and nights are generally cool. Annual rainfall varies from 500 centimetres (200 in.) on the southwestern slopes to 100 centimetres (40 in.) in the northern lowlands. The rainy season runs from October to May. 2017.state.gov/outofdate/bgn/saotomeandprincipe/106168.htm",
-          "references": [
-            "https://2009"
-          ]
-        },
-        {
-          "number": "2.5.4",
-          "title": "Climate:",
-          "slug": "2-5-4-climate",
-          "content": "- São Tomé's climate is classified as tropical. The winter months are much rainier\n\nthan the summer months in São Tomé. This location is classified as by Köppen and Geiger. The average annual temperature in São Tomé is 24.7 °C | 76.4 °F. Approximately 1382 mm | 54.4 inch of rainfall occurs on a yearly basis.\n\n- São Tomé is situated close to the equator and therefore the summers are not\n\neasy to define. It is recommended that the optimal period for embarking on a journey would be during January, February, April, May, June, July, August, September. province/sao -tome -3633/",
-          "references": [
-            "https://en.climate"
-          ]
-        },
-        {
-          "number": "2.5.5",
-          "title": "What are the challenges that Sao tome and Principe facing in climate?",
-          "slug": "2-5-5-what-are-the-challenges-that-sao-tome-and-principe-facing-in-cli",
-          "content": "1. Sea -level rise and coastal erosion\n\n- Rising sea levels are causing coastal erosion and flooding along beaches and\n\nsettlements.\n\n- Many villages, roads, and infrastructure are located near the coast, making\n\nthem vulnerable to storms and higher waves.\n\n- Coastal erosion also threatens fishing areas, tourism sites, and homes.\n\n2. More frequent floods and heavy rainfall\n\n- Climate change has increased intense rainfall , which leads to flash floods\n\nand landslides .\n\n- Cities like São Tomé  and Santo António  often experience flooding because\n\ndrainage systems were not built to handle heavy rain.\n\n- Floods damage houses, roads, bridges, and crops.\n\nsmart -road -rehab -a-crucial -upgrade -for-afe-sao-tome -and- principe?utm_source=chatgpt.com 3. Threats to agriculture and food security\n\n- Agriculture is a key livelihood for many people in the country.\n\n- Climate changes such as drought, soil erosion, and unpredictable rainfall\n\naffect crops like cocoa and coffee.\n\n- These changes can lead to lower food production and income for farmers .\n\nprogrammes -of-action/ldc -portal/country -experiences -with -napa -process/Sao - Tome -and-Principe?utm_source=chatgpt.com 4. Water supply and water quality problems\n\n- Heavy rainfall increases runoff and sediment in rivers , making water\n\ntreatment difficult.\n\n- As a result, water systems sometimes shut down, causing water shortages\n\nfor many people . floods -and-water -security -sao-tome -and-principe?utm_source=chatgpt.com 5. Limited resources to adapt to\n\n- As a small developing island nation , São Tomé and Príncipe has limited\n\nfinancial and technical capacity to deal with climate impacts.\n\n- Infrastructure such as roads and drainage systems often cannot withstand\n\nstronger storms and floods . smart -road -rehab -a-crucial -upgrade -for-afe-sao-tome -and- principe?utm_source=chatgpt.com São Tomé and Príncipe has started solving some of these climate problems: but most solutions are still ongoing and not fully solved yet . The country is working with organizations like the World Bank, UNDP, and African Development Bank  to adapt to climate change. 1. Coastal protection projects The government built and planned projects to protect the coast from erosion and flooding .\n\n- Coastal defenses and reconstruction along the Marginal Road in São Tomé\n\ncity help protect the shoreline from erosion and strong waves.\n\n- These projects include coastal barriers, road upgrades, and better\n\ninfrastructure  to make the capital more climate resilient. They are also restoring mangroves and beaches , which act as natural barriers against waves and floods. protection -and-reconstruction -of-the-marginal -road -sao-tome -e- principe/?utm_source=chatgpt.com 2. Flood control and water management Projects are being implemented to reduce flooding and improve water systems.\n\n- A UNDP project is helping cities like São Tomé and Santo António  improve\n\ndrainage systems and manage water better.\n\n- This includes better waste management, stronger drainage, and improved\n\nwater supply systems . floods -and-water -security -sao-tome -and-principe?utm_source=chatgpt.com 3. Climate -resilient roads and infrastructure The government is rebuilding roads so they can survive heavy rains and floods.\n\n- The EN-1 road  between São Tomé and Guadalupe was rebuilt with better\n\ndrainage and stronger materials.\n\n- These roads are designed to handle strong rainfall and landslides caused by\n\nclimate change . smart -road -rehab -a-crucial -upgrade -for-afe-sao-tome -and- principe?utm_source=chatgpt.com https://www.cia.gov/resources/world -leaders/foreign -governments/sao -tome -and- principe/",
-          "references": [
-            "https://irdeng.com/2025/07/28/project",
-            "https://unfccc.int/topics/resilience/workstreams/national",
-            "https://www.adaptation",
-            "https://www.cia.gov/resources/world",
-            "https://www.gfdrr.org/fr/sao",
-            "https://www.worldbank.org/en/news/feature/2024/05/06/climate"
-          ]
+          "title": "Adaptation Efforts",
+          "content": "Government and international partners are implementing coastal protection, flood management, and climate-resilient infrastructure projects."
         }
-      ],
-      "content": "",
-      "references": []
+      ]
     },
+
     {
       "number": "2.6",
       "title": "Legal",
       "slug": "2-6-legal",
+      "content": "",
       "subsections": [
         {
           "number": "2.6.1",
-          "title": "2023 Report on International Religious Freedom",
-          "slug": "2-6-1-2023-report-on-international-religious-freedom",
-          "content": "Sao Tome and Principe\n\n- The constitution and the law on religious freedom provide for freedom of\n\nreligion and worship and equality for all, irrespective of religious belief, and provide for judicial protection to all religious denominations.  Both the constitution and the religious freedom law grant religious groups autonomy and the right to teach their religion. Religious groups must register with the government. Registration requires at least 500 member signatures and Ministry of Justice approval\n\n- Religious education is not a part of the official public -school curriculum. There\n\nare two schools run by religious groups, one Catholic and one Seventh -day Adventist; both provide a general education and require all students to take religion classes and th e The Ministry of Education provides oversight on the curricula of religious schools.\n\n- Article 8 from the General Constitutional Provisions enshrines the separation of\n\nthe state from religion.",
-          "references": []
+          "title": "Legal System",
+          "content": "The legal system is based on Portuguese law and includes constitutional, administrative, and ordinary courts. It supports rule of law but faces enforcement challenges."
         },
         {
           "number": "2.6.2",
-          "title": "The legal system in São Tomé and Príncipe",
-          "slug": "2-6-2-the-legal-system-in-s-o-tom-and-pr-ncipe",
-          "content": "- Formal legislation molded in diverse ways –namely as laws, law decrees, decrees,\n\nregulations, regional decrees, and executive regional decrees –are the primary internal sources of law in São Tomé. Customary Laws also play a role in certain matters, mostly to explain or go beyond the plain meaning, but only if not in contradiction with the formal laws (secundum legis).\n\n- It plays a crucial role in upholding the principles of  governance  and ensuring a\n\njust society. As a fundamental framework, it is designed to maintain order, safeguard individual rights, and provide a mechanism for resolving disputes among individuals, organizations, and the state. The legal system is anchored in the cou ntry’s Constitution, which establishes the rule of  law as a cornerstone for democratic governance and civil rights.\n\n- The Legal system is heavily influenced by Portuguese  law, due to its colonial\n\npast, and incorporates other elements pertinent to the unique context of the islands. This blend of legal traditions creates a system that is both complex and adaptable, allowing for the evolution of legal norms in response to contempo rary societal needs.\n\n- The legal framework in São Tomé and Príncipe comprises several court types,\n\neach with defined functions and jurisdictions that form the backbone of the judiciary. The primary courts include the Constitutional Court, Administrative Court, and Ordinary Court s, each serving unique roles in the legal system. Diário da República of São Tomé and Príncipe (28 February 2025)\n\n- It’s a Decree -Law (No. 02/2025)  that sets out the structure and organization of\n\nthe 19th Constitutional Government of São Tomé and Príncipe . In simple terms, it explains how the government is arranged, which ministries exist, ( as previously Stated in the Political Section) and what each one is responsible for. The Modern Legal Foundation for Investment Since 2016, São Tomé and Príncipe has fundamentally overhauled its investment framework, creating one of the more progressive legal structures in the region. Two cornerstone laws define the current environment: Investment Code (Decree -Law No. 19/2016)  establishes the terms, conditions, and guarantees for all investments in STP. Tax Benefits Code (Decree -Law No. 15/2016)  details the financial and fiscal incentives available to investors, defining exceptional measures that reduce or eliminate taxes to encourage economic development in priority sectors. Together, these laws create a clear regulatory foundation focused on attracting foreign capital while ensuring equal treatment between domestic and foreign investors guarantee enshrined in both legislation and the country's Constitution. The types of investment that are subject to the Investment Code are broadly defined. They should relate to economic activities that are developed by companies that are organized under the laws of São Tomé or that are registered within the jurisdiction. The investment framework operates on a tiered system based on project value, with different incentive levels corresponding to investment size: Minimum Threshold : To qualify for guarantees and tax incentives, investments must equal or exceed  €50,000 . This relatively low barrier makes STP accessible to small and medium -sized investors, not just major corporations.",
-          "references": []
-        },
-        {
-          "number": "2.6.2",
-          "title": "Investments in Sao Tome and Principe",
-          "slug": "2-6-2-investments-in-sao-tome-and-principe",
-          "content": "Three Investment Regimes : 1. Simplified Regime  (€50,000 to €249,999): Projects receive 50% of the incentives described in the Tax Benefits Code 2. General Regime  (€250,000 to €4,999,999): Full access to standard incentives 3. Special Regime  (€5,000,000 or more): Maximum incentive package with negotiated terms To access these benefits, investors must enter into an Administrative Investment Contract (AIC) with the state. This contract requires several elements: investors must possess at least 20% of the proposed capital available, demonstrate stable financial standing, present clearance certificates showing no debts with the state or social security, and provide a feasibility study demonstrating job creation and social responsibility. Core Investment Guarantees The Investment Code provides fundamental protections that address investors' primary concerns:\n\n- Equal Treatment : The law guarantees non -discriminatory treatment between\n\nnationals and foreigners, regardless of capital origin. Importantly, there are no legal restrictions on foreign ownership of São Toméan companies —100% foreign ownership is permitted in most sectors.\n\n- Expropriation Protection : The state guarantees that investment assets will not\n\nbe nationalized, expropriated, or requisitioned except for weighty public interest reasons. Even then, fair, prior, and effective compensation must be paid.\n\n- Management Autonomy : Public non -interference in private enterprise\n\nmanagement is guaranteed, except in cases expressly provided by law.\n\n- International Arbitration : STP is a signatory to the ICSID Convention\n\n(Washington Convention of 1965) and the New York Convention on arbitration, providing independent dispute resolution mechanisms and reducing political risk. The Administrative Investment Contract (CAI): The CAI is a formal contract between you (the investor) and the State of São Tomé and Príncipe. Think of it as a bilateral agreement where both parties make binding commitments: You commit to:\n\n- Investing a specific amount of capital\n\n- Meeting implementation timelines\n\n- Creating jobs and training local workers\n\n- Achieving defined economic and social objectives\n\nThe government commits to:\n\n- Granting specific tax incentives and benefits\n\n- Protecting your investment against expropriation\n\n- Allowing profit repatriation (subject to forex rules)\n\n- Not interfering in your business management\n\nThis mutual commitment structure is what makes the CAI powerful. Unlike general laws that can be changed by parliament, your CAI is a  contract —it can only be altered by mutual agreement or if you violate its terms. Policies toward Foreign Direct Investment According to Article 4 of the Investment Code, both domestic and foreign investors are free to establish and own business enterprises, as well as engage in all forms of business activity in São Tomé and Príncipe, except in the sectors defined by law as reserved for the state, specifically military and paramilitary activities, and Central Bank operations. According to Article 6 of the Investment Code (Decree -Law No. 19/2016)  , it identifies some areas for investment.\n\n- Both citizens and foreigners  can invest (while preserving and guarantying the\n\nfollowing\n\n- Investor’s Protection against discrimination  (foreign and local investors are\n\ntreated equally).\n\n- Investments will not be unfairly taken away (“expropriated”) without proper\n\ncompensation.\n\n- Investments can be in areas like agriculture, tourism, energy, infrastructure, and\n\nservices.\n\n- The government encourages projects that bring technology, training, and\n\ninnovation . Navigator | UNCTAD Investment Policy Hub",
-          "references": []
+          "title": "Investment Laws",
+          "content": "Investment regulations promote foreign investment through incentives, equal treatment, and protection against expropriation."
         },
         {
           "number": "2.6.3",
-          "title": "Land Access in Sao Tome and Principe",
-          "slug": "2-6-3-land-access-in-sao-tome-and-principe",
-          "content": "Land access is often the most complex issue for foreign investors —and São Tomé and Príncipe is no exception After independence. The state became the dominant landowner & much of the country's productive land remains state -owned. The restriction : São Toméan law  prohibits foreign investors from possessing state lands . The general limit : Foreign nationals can own maximum  two hectares  of private land. Land access in São Tomé and Príncipe is possible through renewable concessions , but success depends less on paperwork and more on community engagement and careful due diligence . The legal rights are clear, but the “social license to operate” is what determines whether a project can move forward smoothly. Concession System\n\n- Mechanism : Investors don’t own land outright; they receive 20-year\n\nconcessions , renewable automatically.\n\n- Rights granted : Possession, use, and enjoyment of land; lease agreements;\n\nexploitation rights.\n\n- Termination : Either party can end with 2 years’ notice.\n\n- Fees : Agricultural concessions cost about $10 –20 per hectare/year;\n\ntourism/infrastructure fees are negotiated. Article 17. from the General Constitutional Provisions: Foreigners in São Tomé and Príncipe\n\n- The exercise of public office only will be permitted to foreigners provided it has a\n\npredominantly technical nature.\n\n- Subject to reciprocal terms, the law may grant foreign citizens resident in the\n\nnational territory active and passive electoral capacity for the election of the holders of the organs of local government.\n\n- Article 17 of the Constitution protects the rights and integrity of foreigners.\n\nForeigners and displaced persons who reside or stay in São Tomé and Príncipe enjoy the same rights and are subject to the same obligations as a São Tomean citizen, except insof ar as are concerned political rights, the exercise of public office, and other rights and obligations expressly reserved by law for the national citizen. Article 15. Principles of Equality\n\n- All citizens are equal before the law, enjoy the same rights and are subject to the\n\nsame obligations\n\n- Woman is equal to man in rights and obligations, being guaranteed to her full\n\nparticipation in political, economic, social and cultural life.",
-          "references": []
+          "title": "Land Regulations",
+          "content": "Most land is state-owned. Foreign investors can access land through concession systems rather than ownership."
         },
         {
           "number": "2.6.4",
-          "title": "Regulatory Authority for Supplying Medicines",
-          "slug": "2-6-4-regulatory-authority-for-supplying-medicines",
-          "content": "- The Central Supply of Medicines (Central de Aprovisionamento de\n\nMedicamentos) (CAME) is an institution under the Ministry of Health to supply the Sao Tomean market with medicines and hospital consumables. The CAME in connection with the National Medicines F und (Fundo Nacional de Medicamentos) (FNM), a semi -autonomous governmental organization, is responsible for procuring, stocking and distributing essential medicines for the public sector on behalf of Ministry of Health (Ministry of Health of STP, n.d. -b).\n\n- All medicines in Sao Tome and Principe are imported (Martinho do Rosário,\n\n2008). As of 2007, drugs are procured through the International Dispensary Association (IDA). The IDA ensures quality, though prices are low (Martinho do Rosário, 2008).",
-          "references": []
+          "title": "Labor and Residency Laws",
+          "content": "Foreign workers must meet quotas and secure permits. Residency visas are available for work, study, and investment purposes."
         },
         {
           "number": "2.6.5",
-          "title": "Residence Visa",
-          "slug": "2-6-5-residence-visa",
-          "content": "For longer stays, this visa leads to residency and is categorized by purpose. It requires a valid travel document and, for minors, parental authorization. Applications are submitted at STP embassies or consulates, with processing up to 30 days.\n\n- For Subordinate Professional Activity:  Submit an employment contract with\n\na favorable opinion from the Ministry of Labor (issued within 20 days), verifying contractual terms and lack of suitable local candidates. Foreign worker quotas apply (preference for locals).\n\n- For Independent Professional Activity:  Prove foreign investment or sufficient\n\nfunds for self -employment, plus qualifications where needed.\n\n- For Research or Highly Qualified Positions:  Affiliation with recognized\n\nresearch centers, a job offer, and return guarantees if stay becomes irregular.\n\n- For Study, Exchange, Internship, or Volunteer:  Valid travel document;\n\nminors need parental consent.\n\n- For Family Reunification:  SMF notifies the Ministry of Foreign Affairs for\n\nimmediate issuance post -approval. Authorizations and Procedures for Obtaining Residency Temporary Residence Certificate:Permanent Residence Certificate: Once in STP on a residence visa, apply for a residence certificate at the SMF office or through a legal representative. General conditions include a valid visa, police clearance, health certificate, and proof of accommodation/funds. Processing takes 15-30 days, with fees around STN 5,000 -10,000 ($220 -450). Temporary Residence Certificate: Valid  for one year from issuance, renewable annually or upon changes in details. Allows work/study as per visa. Permanent Residence Certificate: No expiry but renew every five years or on changes. Granted after several years of temporary residency, demonstrating integration (e.g., language, contributions). Exceptional Regimes Per a Government Decree from April 2017, citizens of certain countries (e.g., EU, USA, Canada) enjoy visa -free entry for up to 15 days for tourism/business. US citizens can stay up to 30 days visa -free. Chinese holders of diplomatic/special passports get 1 5 days exemption, following diplomatic reestablishment. Recent visa waivers (ratified 2025) with Ghana, Mozambique, Colombia, and Dominica allow reciprocal 15 -day stays, enhancing regional ties. Extensions are possible via SMF for justified reasons. SaoTomeExpert",
-          "references": []
-        },
-        {
-          "number": "2.6.6",
-          "title": "Religious Freedom Laws",
-          "slug": "2-6-6-religious-freedom-laws",
-          "content": "### 2.6.6.1 — Constitutional Guarantees The Constitution of the Democratic Republic of São Tomé and Príncipe, in its most recent revision of 2003, provides robust guarantees of religious freedom. Article 27 explicitly declares that freedom of conscience, religion, and worship is inviolable speci fying that no citizen may be persecuted, deprived of rights, or exempted from civic duties on account of religious conviction or practice. Article 8 establishes São Tomé and Príncipe as a secular (lay) state, stipulating a clear separation between state institutions and all religious institutions. Article 265 criminalizes 'religious coercion', defined as compelling a person to participate or abstain from religious worship, and provides for up to six months' imprisonment for violations.\n\n- Constitute Project. Constitution of São Tomé and Príncipe (2003).\n\n- Freedom of Thought Report: São Tomé and Príncipe. Op. cit. Humanists\n\nInternational . ### 2.6.6.2 — Religious Registration Process Religious groups must register with the government of São Tomé and Príncipe; however, the process is not onerous or discriminatory. The U.S. State Department's 2019 and 2020 Religious Freedom Reports confirm that no group has ever been denied registration,  and no unregistered group has been restricted from operation. The registration procedure requires:\n\n- Submission of a written letter requesting authorization from the Ministry of\n\nJustice and Human Rights.\n\n- Submission of the group's statutes and meeting minutes to a notary public,\n\nsigned by the president and secretary.\n\n- Certification from the Registrar's Office that no existing organization bears\n\nthe same name.\n\n- Payment of notarial fees (historically approximately USD 45 –50).\n\n- Publication of approval in the official government gazette.\n\nOnce registered, a religious group enjoys the same tax -exempt status as registered nonprofit organizations and need not re -register. Foreign religious groups that fail to register are subject to fines and possible expulsion, making timely registration a priority for the Coptic mission team. U.S. Department of State. 2019 Report on International Religious Freedom: São Tomé and Príncipe .",
-          "references": []
+          "title": "Religious Freedom",
+          "content": "The constitution guarantees freedom of religion and separation of state and religion, with equal rights for all groups."
         }
-      ],
-      "content": "",
-      "references": []
+      ]
     }
   ]
 }
