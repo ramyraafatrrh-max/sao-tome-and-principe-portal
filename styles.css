@@ -93,3 +93,63 @@ body{
   .crumbs{text-align:left;max-width:100%}
   .banner h1{font-size:28px}
 }
+
+.hidden { display: none !important; }
+
+.tripBar{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  margin-top:12px;
+}
+
+.tripActions{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+}
+
+.tripEmbed{
+  margin-top:14px;
+  padding:14px;
+  border-radius:16px;
+  border:1px solid rgba(255,255,255,.10);
+  background:rgba(255,255,255,.03);
+}
+
+.btnPrimary{
+  background: rgba(50,243,192,.16);
+  border:1px solid rgba(50,243,192,.35);
+  color: rgba(255,255,255,.92);
+  border-radius:14px;
+  padding:10px 14px;
+  cursor:pointer;
+  font-weight:650;
+}
+
+.btnPrimary:hover{ background: rgba(50,243,192,.22); }
+
+.btnSecondary{
+  background: rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.12);
+  color: rgba(255,255,255,.88);
+  border-radius:14px;
+  padding:10px 14px;
+  cursor:pointer;
+  font-weight:600;
+}
+
+.btnSecondary:hover{ background: rgba(255,255,255,.09); }
+
+/* Make embedded widgets comfortable */
+.tripEmbed .widgetBox{
+  width:100%;
+  min-height: 220px;
+}
+
+.tripEmbed iframe{
+  width:100%;
+  min-height: 520px;
+  border:0;
+  border-radius:14px;
+}
