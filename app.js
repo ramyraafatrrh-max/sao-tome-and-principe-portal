@@ -220,8 +220,8 @@ function showHotelsMenu(){
     <div class="widgetBox">
       <h3 style="margin-top:0">Hotels & Reviews</h3>
       <div class="tripActions" style="margin-top:10px">
-        <button class="btnPrimary" id="openBookingHotels" type="button">Open Booking.com</button>
-        <button class="btnSecondary" id="openTripadvisor" type="button">Open Tripadvisor</button>
+        <button class="btnPrimary" id="openBookingHotels" type="button">Booking.com</button>
+        <button class="btnSecondary" id="openTripadvisor" type="button">Tripadvisor</button>
       </div>
       <p class="muted" style="margin:10px 0 0">These open in new tabs so the portal stays open.</p>
     </div>
