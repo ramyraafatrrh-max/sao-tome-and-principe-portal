@@ -1,6 +1,11 @@
 /* Static docs app for GitHub Pages (hash routing).
    Supports optional structured tables via node.table = { columns:[], rows:[[]] }.
-   If node.table exists, ONLY the table is rendered (no duplicated markdown text).
+   If node.table exists, ONLY the table is rendered.
+
+   Book Your Trip:
+   - Book Flights opens Skyscanner in a NEW tab
+   - Book Hotels opens Booking.com in a NEW tab and also offers Tripadvisor (NEW tab)
+   - Trip panel auto-collapses when navigating to a different chapter
 */
 
 const EMBEDDED_CHAPTERS = [
@@ -36,12 +41,16 @@ const el = {
   subsectionTabs: document.getElementById('subsectionTabs'),
   content: document.getElementById('content'),
   refs: document.getElementById('refs'),
+
+  // Book Your Trip UI (optional DOM)
   bookTripBtn: document.getElementById('bookTripBtn'),
   bookTripActions: document.getElementById('bookTripActions'),
   bookFlightsBtn: document.getElementById('bookFlightsBtn'),
   bookHotelsBtn: document.getElementById('bookHotelsBtn'),
   tripEmbed: document.getElementById('tripEmbed'),
 };
+
+let lastChapterForTripUI = null;
 
 function escapeHtml(str){
   return String(str ?? '')
@@ -57,102 +66,18 @@ function linkify(text){
   return escapeHtml(text).replace(urlRegex, (m) => `<a href="${m}" target="_blank" rel="noreferrer">${m}</a>`);
 }
 
+function closeTripUI(){
+  if (el.bookTripActions) el.bookTripActions.classList.add('hidden');
+  if (el.tripEmbed) {
+    el.tripEmbed.innerHTML = '';
+    el.tripEmbed.classList.add('hidden');
+  }
+}
+
 function showTripEmbed(html){
+  if (!el.tripEmbed) return;
   el.tripEmbed.innerHTML = html;
   el.tripEmbed.classList.remove('hidden');
-}
-
-function hideTripEmbed(){
-  el.tripEmbed.innerHTML = '';
-  el.tripEmbed.classList.add('hidden');
-}
-
-function ensureScriptOnce(id, src){
-  if (document.getElementById(id)) return;
-  const s = document.createElement('script');
-  s.id = id;
-  s.src = src;
-  s.async = true;
-  document.body.appendChild(s);
-}
-
-
-function loadSkyscannerFlights(){
-  // Open Skyscanner CAI -> TMS in a new tab
-  window.open(
-    'https://www.skyscanner.com/routes/cai/tms/cairo-to-sao-tome-is.html',
-    '_blank',
-    'noopener,noreferrer'
-  );
-}
-
-
-const BOOKING_WIDGET_HTML = '';
-// Paste your Booking.com Search Box widget code here (from Partner Centre).
-// Booking confirms this widget loads within an iframe on your site. 【5-445e65】【6-0cff89】
-
-function loadBookingHotels(){
-  // Show two buttons: Booking.com + Tripadvisor
-  showTripEmbed(`
-    <div class="widgetBox">
-      <h3 style="margin-top:0">Hotels & Reviews</h3>
-
-      <div class="tripActions" style="margin-top:10px">
-        <button class="btnPrimary" id="openBookingHotels" type="button">
-          Open Booking.com (New Tab)
-        </button>
-
-        <button class="btnSecondary" id="openTripadvisor" type="button">
-          Open Tripadvisor (New Tab)
-        </button>
-      </div>
-
-      <p class="muted" style="margin:10px 0 0">
-        These open in new tabs so the portal stays open.
-      </p>
-    </div>
-  `);
-
-  // Wire buttons after HTML mounts
-  const bookingBtn = document.getElementById('openBookingHotels');
-  const tripBtn = document.getElementById('openTripadvisor');
-
-  if (bookingBtn){
-    bookingBtn.addEventListener('click', () => {
-      window.open(
-        'https://www.booking.com/searchresults.en-gb.html?ss=Sao%20Tome&group_adults=2&no_rooms=1',
-        '_blank',
-        'noopener,noreferrer'
-      );
-    });
-  }
-
-  if (tripBtn){
-    tripBtn.addEventListener('click', () => {
-      window.open(
-        'https://www.tripadvisor.com/Tourism-g294442-Sao_Tome_Sao_Tome_Island-Vacations.html',
-        '_blank',
-        'noopener,noreferrer'
-      );
-    });
-  }
-}
-
-
-  // Option 2 fallback: simple Booking.com search form (same tab)
-  showTripEmbed(`
-    <div class="widgetBox">
-      <h3 style="margin-top:0">Booking.com Hotels (São Tomé)</h3>
-      <form action="https://www.booking.com/searchresults.en-gb.html" method="get">
-        <input type="hidden" name="ss" value="Sao Tome">
-        <input type="hidden" name="group_adults" value="2">
-        <input type="hidden" name="no_rooms" value="1">
-        <button class="btnPrimary" type="submit">Search on Booking.com</button>
-        <p class="muted" style="margin:10px 0 0">
-          Tip: If you join Booking.com’s Affiliate Partner Program, you can replace this with the official embedded Search Box widget (iframe-based). </p>
-      </form>
-    </div>
-  `);
 }
 
 function parseHash(){
@@ -174,7 +99,7 @@ async function loadGeneratedAt(){
       const v = await res.json();
       if (v?.generatedAt){
         state.index.generatedAt = v.generatedAt;
-        el.generatedAt.textContent = `Generated: ${v.generatedAt}`;
+        if (el.generatedAt) el.generatedAt.textContent = `Generated: ${v.generatedAt}`;
       }
     }
   } catch(e) {}
@@ -189,12 +114,15 @@ async function loadChapter(chapterNumber){
   } catch(e){
     console.error(e);
     state.chapter = { number: chapterNumber, title: '', sections: [] };
-    el.content.innerHTML = `<p class="muted">Chapter data could not be loaded. Make sure the <code>data/</code> folder exists in GitHub Pages.</p>`;
-    el.refs.innerHTML = '';
+    if (el.content) {
+      el.content.innerHTML = `<p class="muted">Chapter data could not be loaded. Make sure the <code>data/</code> folder exists in GitHub Pages.</p>`;
+    }
+    if (el.refs) el.refs.innerHTML = '';
   }
 }
 
 function crumbs(items){
+  if (!el.breadcrumbs) return;
   el.breadcrumbs.innerHTML = items.map((it, idx) => {
     const last = idx === items.length - 1;
     if (last) return `<span>${escapeHtml(it.label)}</span>`;
@@ -203,6 +131,7 @@ function crumbs(items){
 }
 
 function renderTabs(container, tabs, activeHref){
+  if (!container) return;
   container.innerHTML = '';
   if (!tabs || !tabs.length){
     container.style.display = 'none';
@@ -214,7 +143,13 @@ function renderTabs(container, tabs, activeHref){
     btn.className = 'tab' + (t.href === activeHref ? ' tab--active' : '');
     btn.type = 'button';
     btn.innerHTML = `<div class="tab__top">${escapeHtml(t.top)}</div>${t.sub ? `<div class="tab__sub">${escapeHtml(t.sub)}</div>` : ''}`;
-    btn.addEventListener('click', () => { location.hash = t.href; });
+
+    btn.addEventListener('click', () => {
+      // Auto-close trip UI when user clicks a CHAPTER tab
+      if (container === el.chapterTabs) closeTripUI();
+      location.hash = t.href;
+    });
+
     container.appendChild(btn);
   }
 }
@@ -231,11 +166,13 @@ function renderTextToHtml(text){
 }
 
 function renderContent(text){
+  if (!el.content) return;
   if (!text){ el.content.innerHTML = ''; return; }
   el.content.innerHTML = renderTextToHtml(text);
 }
 
 function renderRefs(links){
+  if (!el.refs) return;
   if (!links || !links.length){ el.refs.innerHTML = ''; return; }
   const rows = links.map((l,i) => `<tr><td>${i+1}</td><td><a href="${l}" target="_blank" rel="noreferrer">${l}</a></td></tr>`).join('');
   el.refs.innerHTML = `<h3>References</h3><table class="table"><thead><tr><th style="width:70px">#</th><th>Link</th></tr></thead><tbody>${rows}</tbody></table>`;
@@ -253,18 +190,15 @@ function renderHtmlTable(table){
 
 function renderNode(node){
   if (!node){
-    el.content.innerHTML = '';
-    el.refs.innerHTML = '';
+    if (el.content) el.content.innerHTML = '';
+    if (el.refs) el.refs.innerHTML = '';
     return;
   }
-
-  // If a structured table exists, render ONLY the table.
   if (node.table){
-    el.content.innerHTML = renderHtmlTable(node.table);
+    if (el.content) el.content.innerHTML = renderHtmlTable(node.table);
   } else {
     renderContent(node.content);
   }
-
   renderRefs(node.references || []);
 }
 
@@ -276,8 +210,47 @@ function findSub(section, subSlug){
   return (section?.subsections || []).find(s => s.slug === subSlug);
 }
 
+// --- Book Your Trip actions ---
+function openSkyscannerFlights(){
+  window.open('https://www.skyscanner.com/routes/cai/tms/cairo-to-sao-tome-is.html', '_blank', 'noopener,noreferrer');
+}
+
+function showHotelsMenu(){
+  showTripEmbed(`
+    <div class="widgetBox">
+      <h3 style="margin-top:0">Hotels & Reviews</h3>
+      <div class="tripActions" style="margin-top:10px">
+        <button class="btnPrimary" id="openBookingHotels" type="button">Open Booking.com (New Tab)</button>
+        <button class="btnSecondary" id="openTripadvisor" type="button">Open Tripadvisor (New Tab)</button>
+      </div>
+      <p class="muted" style="margin:10px 0 0">These open in new tabs so the portal stays open.</p>
+    </div>
+  `);
+
+  const bookingBtn = document.getElementById('openBookingHotels');
+  const tripBtn = document.getElementById('openTripadvisor');
+
+  if (bookingBtn){
+    bookingBtn.addEventListener('click', () => {
+      window.open('https://www.booking.com/searchresults.en-gb.html?ss=Sao%20Tome&group_adults=2&no_rooms=1', '_blank', 'noopener,noreferrer');
+    });
+  }
+
+  if (tripBtn){
+    tripBtn.addEventListener('click', () => {
+      window.open('https://www.tripadvisor.com/Tourism-g294442-Sao_Tome_Sao_Tome_Island-Vacations.html', '_blank', 'noopener,noreferrer');
+    });
+  }
+}
+
 async function render(){
   const r = parseHash();
+
+  // Close Book Trip UI automatically when chapter changes via back/forward, etc.
+  if (r.chapter !== lastChapterForTripUI){
+    closeTripUI();
+    lastChapterForTripUI = r.chapter;
+  }
 
   const chapterTabs = (state.index.chapters || []).map(c => ({
     top: `Chapter ${c.number}`,
@@ -288,13 +261,13 @@ async function render(){
   renderTabs(el.chapterTabs, chapterTabs, r.chapter ? `#/chapter/${r.chapter}` : null);
 
   if (!r.chapter){
-    el.viewTitle.textContent = 'Chapters';
-    el.viewSubtitle.textContent = '';
+    if (el.viewTitle) el.viewTitle.textContent = 'Chapters';
+    if (el.viewSubtitle) el.viewSubtitle.textContent = '';
     crumbs([{label:'Home', href:'#/'}]);
-    el.sectionTabs.style.display = 'none';
-    el.subsectionTabs.style.display = 'none';
-    el.content.innerHTML = '';
-    el.refs.innerHTML = '';
+    if (el.sectionTabs) el.sectionTabs.style.display = 'none';
+    if (el.subsectionTabs) el.subsectionTabs.style.display = 'none';
+    if (el.content) el.content.innerHTML = '';
+    if (el.refs) el.refs.innerHTML = '';
     return;
   }
 
@@ -308,11 +281,11 @@ async function render(){
   }));
 
   if (!r.section){
-    el.viewTitle.textContent = `Chapter ${r.chapter}: ${chMeta?.title || ''}`;
-    el.viewSubtitle.textContent = '';
-    crumbs([{label:'Home', href:'#/'},{label:`Chapter ${r.chapter}`, href:`#/chapter/${r.chapter}` }]);
+    if (el.viewTitle) el.viewTitle.textContent = `Chapter ${r.chapter}: ${chMeta?.title || ''}`;
+    if (el.viewSubtitle) el.viewSubtitle.textContent = '';
+    crumbs([{label:'Home', href:'#/'},{label:`Chapter ${r.chapter}`, href:`#/chapter/${r.chapter}`}]);
     renderTabs(el.sectionTabs, secTabs, null);
-    el.subsectionTabs.style.display = 'none';
+    if (el.subsectionTabs) el.subsectionTabs.style.display = 'none';
 
     const sum = state.chapter.sections?.[0];
     if (sum && String(sum.number).endsWith('.0')) renderNode(sum);
@@ -331,8 +304,8 @@ async function render(){
     return;
   }
 
-  el.viewTitle.textContent = `${sec.number} — ${sec.title}`;
-  el.viewSubtitle.textContent = '';
+  if (el.viewTitle) el.viewTitle.textContent = `${sec.number} — ${sec.title}`;
+  if (el.viewSubtitle) el.viewSubtitle.textContent = '';
   crumbs([{label:'Home', href:'#/'},{label:`Chapter ${r.chapter}`, href:`#/chapter/${r.chapter}`},{label:sec.number, href:`#/chapter/${r.chapter}/section/${sec.slug}` }]);
 
   renderTabs(el.sectionTabs, secTabs, `#/chapter/${r.chapter}/section/${sec.slug}`);
@@ -344,7 +317,7 @@ async function render(){
   }));
 
   if (!subTabs.length){
-    el.subsectionTabs.style.display = 'none';
+    if (el.subsectionTabs) el.subsectionTabs.style.display = 'none';
     renderNode(sec);
     return;
   }
@@ -357,7 +330,7 @@ async function render(){
     return;
   }
 
-  el.viewTitle.textContent = `${sub.number} — ${sub.title}`;
+  if (el.viewTitle) el.viewTitle.textContent = `${sub.number} — ${sub.title}`;
   crumbs([
     {label:'Home', href:'#/'},
     {label:`Chapter ${r.chapter}`, href:`#/chapter/${r.chapter}`},
@@ -369,27 +342,27 @@ async function render(){
 }
 
 async function start(){
-  el.countryName.textContent = state.index.country.name;
-  el.flagImg.src = state.index.country.flag;
+  if (el.countryName) el.countryName.textContent = state.index.country.name;
+  if (el.flagImg) el.flagImg.src = state.index.country.flag;
   await loadGeneratedAt();
 
-  // ✅ Book Your Trip handlers
-  if (el.bookTripBtn){
+  // Book Your Trip handlers
+  if (el.bookTripBtn && el.bookTripActions){
     el.bookTripBtn.addEventListener('click', () => {
       el.bookTripActions.classList.toggle('hidden');
-      if (el.bookTripActions.classList.contains('hidden')) hideTripEmbed();
+      if (el.bookTripActions.classList.contains('hidden')) closeTripUI();
     });
   }
 
   if (el.bookFlightsBtn){
     el.bookFlightsBtn.addEventListener('click', () => {
-      loadSkyscannerFlights();
+      openSkyscannerFlights();
     });
   }
 
   if (el.bookHotelsBtn){
     el.bookHotelsBtn.addEventListener('click', () => {
-      loadBookingHotels();
+      showHotelsMenu();
     });
   }
 
