@@ -76,35 +76,68 @@ function ensureScriptOnce(id, src){
   document.body.appendChild(s);
 }
 
-function loadSkyscannerFlights(){
-  // SearchWidget docs & loader.js are official Skyscanner widgets. 【4-39be65】【3-ad9201】
-  showTripEmbed(`
-    <div class="widgetBox">
-      <div
-        data-skyscanner-widget="SearchWidget"
-        data-locale="en-GB"
-        data-market="EG"
-        data-currency="USD"
-        data-origin-iata-code="CAI"
-        data-destination-iata-code="TMS"
-        data-flight-type="return"
-        data-target="_self">
-      </div>
-    </div>
-  `);
 
-  ensureScriptOnce('skyscanner-widget-loader', 'https://widgets.skyscanner.net/widget-server/js/loader.js');
+function loadSkyscannerFlights(){
+  // Open Skyscanner CAI -> TMS in a new tab
+  window.open(
+    'https://www.skyscanner.com/routes/cai/tms/cairo-to-sao-tome-is.html',
+    '_blank',
+    'noopener,noreferrer'
+  );
 }
+
 
 const BOOKING_WIDGET_HTML = '';
 // Paste your Booking.com Search Box widget code here (from Partner Centre).
 // Booking confirms this widget loads within an iframe on your site. 【5-445e65】【6-0cff89】
 
 function loadBookingHotels(){
-  if (BOOKING_WIDGET_HTML.trim()){
-    showTripEmbed(BOOKING_WIDGET_HTML);
-    return;
+  // Show two buttons: Booking.com + Tripadvisor
+  showTripEmbed(`
+    <div class="widgetBox">
+      <h3 style="margin-top:0">Hotels & Reviews</h3>
+
+      <div class="tripActions" style="margin-top:10px">
+        <button class="btnPrimary" id="openBookingHotels" type="button">
+          Open Booking.com (New Tab)
+        </button>
+
+        <button class="btnSecondary" id="openTripadvisor" type="button">
+          Open Tripadvisor (New Tab)
+        </button>
+      </div>
+
+      <p class="muted" style="margin:10px 0 0">
+        These open in new tabs so the portal stays open.
+      </p>
+    </div>
+  `);
+
+  // Wire buttons after HTML mounts
+  const bookingBtn = document.getElementById('openBookingHotels');
+  const tripBtn = document.getElementById('openTripadvisor');
+
+  if (bookingBtn){
+    bookingBtn.addEventListener('click', () => {
+      window.open(
+        'https://www.booking.com/searchresults.en-gb.html?ss=Sao%20Tome&group_adults=2&no_rooms=1',
+        '_blank',
+        'noopener,noreferrer'
+      );
+    });
   }
+
+  if (tripBtn){
+    tripBtn.addEventListener('click', () => {
+      window.open(
+        'https://www.tripadvisor.com/Tourism-g294442-Sao_Tome_Sao_Tome_Island-Vacations.html',
+        '_blank',
+        'noopener,noreferrer'
+      );
+    });
+  }
+}
+
 
   // Option 2 fallback: simple Booking.com search form (same tab)
   showTripEmbed(`
