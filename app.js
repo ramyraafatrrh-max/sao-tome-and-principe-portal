@@ -36,6 +36,11 @@ const el = {
   subsectionTabs: document.getElementById('subsectionTabs'),
   content: document.getElementById('content'),
   refs: document.getElementById('refs'),
+  bookTripBtn: document.getElementById('bookTripBtn'),
+  bookTripActions: document.getElementById('bookTripActions'),
+  bookFlightsBtn: document.getElementById('bookFlightsBtn'),
+  bookHotelsBtn: document.getElementById('bookHotelsBtn'),
+  tripEmbed: document.getElementById('tripEmbed'),
 };
 
 function escapeHtml(str){
@@ -50,6 +55,71 @@ function escapeHtml(str){
 function linkify(text){
   const urlRegex = /(https?:\/\/[^\s)\]]+)/g;
   return escapeHtml(text).replace(urlRegex, (m) => `<a href="${m}" target="_blank" rel="noreferrer">${m}</a>`);
+}
+
+function showTripEmbed(html){
+  el.tripEmbed.innerHTML = html;
+  el.tripEmbed.classList.remove('hidden');
+}
+
+function hideTripEmbed(){
+  el.tripEmbed.innerHTML = '';
+  el.tripEmbed.classList.add('hidden');
+}
+
+function ensureScriptOnce(id, src){
+  if (document.getElementById(id)) return;
+  const s = document.createElement('script');
+  s.id = id;
+  s.src = src;
+  s.async = true;
+  document.body.appendChild(s);
+}
+
+function loadSkyscannerFlights(){
+  // SearchWidget docs & loader.js are official Skyscanner widgets. 【4-39be65】【3-ad9201】
+  showTripEmbed(`
+    <div class="widgetBox">
+      <div
+        data-skyscanner-widget="SearchWidget"
+        data-locale="en-GB"
+        data-market="EG"
+        data-currency="USD"
+        data-origin-iata-code="CAI"
+        data-destination-iata-code="TMS"
+        data-flight-type="return"
+        data-target="_self">
+      </div>
+    </div>
+  `);
+
+  ensureScriptOnce('skyscanner-widget-loader', 'https://widgets.skyscanner.net/widget-server/js/loader.js');
+}
+
+const BOOKING_WIDGET_HTML = '';
+// Paste your Booking.com Search Box widget code here (from Partner Centre).
+// Booking confirms this widget loads within an iframe on your site. 【5-445e65】【6-0cff89】
+
+function loadBookingHotels(){
+  if (BOOKING_WIDGET_HTML.trim()){
+    showTripEmbed(BOOKING_WIDGET_HTML);
+    return;
+  }
+
+  // Option 2 fallback: simple Booking.com search form (same tab)
+  showTripEmbed(`
+    <div class="widgetBox">
+      <h3 style="margin-top:0">Booking.com Hotels (São Tomé)</h3>
+      <form action="https://www.booking.com/searchresults.en-gb.html" method="get">
+        <input type="hidden" name="ss" value="Sao Tome">
+        <input type="hidden" name="group_adults" value="2">
+        <input type="hidden" name="no_rooms" value="1">
+        <button class="btnPrimary" type="submit">Search on Booking.com</button>
+        <p class="muted" style="margin:10px 0 0">
+          Tip: If you join Booking.com’s Affiliate Partner Program, you can replace this with the official embedded Search Box widget (iframe-based). </p>
+      </form>
+    </div>
+  `);
 }
 
 function parseHash(){
@@ -269,6 +339,26 @@ async function start(){
   el.countryName.textContent = state.index.country.name;
   el.flagImg.src = state.index.country.flag;
   await loadGeneratedAt();
+
+  // ✅ Book Your Trip handlers
+  if (el.bookTripBtn){
+    el.bookTripBtn.addEventListener('click', () => {
+      el.bookTripActions.classList.toggle('hidden');
+      if (el.bookTripActions.classList.contains('hidden')) hideTripEmbed();
+    });
+  }
+
+  if (el.bookFlightsBtn){
+    el.bookFlightsBtn.addEventListener('click', () => {
+      loadSkyscannerFlights();
+    });
+  }
+
+  if (el.bookHotelsBtn){
+    el.bookHotelsBtn.addEventListener('click', () => {
+      loadBookingHotels();
+    });
+  }
 
   window.addEventListener('hashchange', () => render());
   if (!location.hash) location.hash = '#/';
