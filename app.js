@@ -1,16 +1,8 @@
 /* Static docs app for GitHub Pages (hash routing).
    - Renders chapters from data/chapterX.json
-   - Renders structured tables when node.table exists
+   - Renders structured tables when node.table exists (table only)
    - Book Your Trip UI (optional)
-   - Icons layout:
-       icon-1: top bar right
-       icon-2, icon-3 (and optional icon-4): after chapter tabs
-
-   Required assets:
-     assets/icons/icon-1.png
-     assets/icons/icon-2.png
-     assets/icons/icon-3.png
-     assets/icons/icon-4.png (optional)
+   - Tabs are centered via CSS (.tabs { justify-content:center; })
 */
 
 const EMBEDDED_CHAPTERS = [
@@ -215,62 +207,7 @@ function findSub(section, subSlug){
   return (section?.subsections || []).find(s => s.slug === subSlug);
 }
 
-// ---- Icons placement ----
-function ensureTopIcon(){
-  // Insert icon-1 (and icon-4 if present) into banner top bar.
-  const bannerInner = document.querySelector('.banner__inner');
-  if (!bannerInner) return;
-
-  let box = document.querySelector('.topBarIcons');
-  if (!box){
-    box = document.createElement('div');
-    box.className = 'topBarIcons';
-    bannerInner.appendChild(box);
-  }
-
-  // Clear + rebuild
-  box.innerHTML = '';
-
-  const img1 = document.createElement('img');
-  img1.src = 'assets/icons/icon-1.png';
-  img1.alt = 'Icon 1';
-  box.appendChild(img1);
-
-  // Optional icon-4: if it exists, it will load; if missing, browser will show broken icon.
-  // To avoid broken icon, we attach and hide on error.
-  const img4 = document.createElement('img');
-  img4.src = 'assets/icons/icon-4.png';
-  img4.alt = 'Icon 4';
-  img4.onerror = () => { img4.remove(); };
-  box.appendChild(img4);
-}
-
-function ensureBottomIcons(){
-  // Insert icon-2 and icon-3 (and optional icon-4 if you prefer) after chapter tabs.
-  if (!el.chapterTabs) return;
-
-  let dock = document.getElementById('bottomIcons');
-  if (!dock){
-    dock = document.createElement('div');
-    dock.id = 'bottomIcons';
-    dock.className = 'bottomIcons';
-    el.chapterTabs.insertAdjacentElement('afterend', dock);
-  }
-
-  dock.innerHTML = '';
-
-  const img2 = document.createElement('img');
-  img2.src = 'assets/icons/icon-2.png';
-  img2.alt = 'Icon 2';
-  dock.appendChild(img2);
-
-  const img3 = document.createElement('img');
-  img3.src = 'assets/icons/icon-3.png';
-  img3.alt = 'Icon 3';
-  dock.appendChild(img3);
-}
-
-// --- Book Your Trip actions (kept simple, opens new tabs) ---
+// --- Book Your Trip actions (open new tabs) ---
 function openSkyscannerFlights(){
   window.open('https://www.skyscanner.com/routes/cai/tms/cairo-to-sao-tome-is.html', '_blank', 'noopener,noreferrer');
 }
@@ -398,10 +335,6 @@ async function start(){
   if (el.countryName) el.countryName.textContent = state.index.country.name;
   if (el.flagImg) el.flagImg.src = state.index.country.flag;
 
-  // Ensure icons are present
-  ensureTopIcon();
-  ensureBottomIcons();
-
   await loadGeneratedAt();
 
   // Book Your Trip handlers
@@ -425,10 +358,7 @@ async function start(){
   }
 
   window.addEventListener('hashchange', () => {
-    // close UI and make sure bottom icons remain after any render
     render();
-    ensureBottomIcons();
-    ensureTopIcon();
   });
 
   if (!location.hash) location.hash = '#/';
