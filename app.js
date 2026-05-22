@@ -345,7 +345,7 @@ async function start(){
   if (el.countryName) el.countryName.textContent = state.index.country.name;
   if (el.flagImg) el.flagImg.src = state.index.country.flag;
   await loadGeneratedAt();
-
+ensureIconDock();
   // Book Your Trip handlers
   if (el.bookTripBtn && el.bookTripActions){
     el.bookTripBtn.addEventListener('click', () => {
@@ -369,6 +369,22 @@ async function start(){
   window.addEventListener('hashchange', () => render());
   if (!location.hash) location.hash = '#/';
   await render();
+}
+function ensureIconDock(){
+  const existing = document.getElementById('iconDock');
+  if (existing) return;
+
+  const dock = document.createElement('div');
+  dock.id = 'iconDock';
+  dock.className = 'iconDock';
+
+  dock.innerHTML = `
+    <img src="assets/icons/icon-1.png" alt="">
+    <img src="assets/icons/icon-2.png" alt="">
+    <img src="assets/icons/icon-3.png" alt="">
+  `;
+
+  document.body.appendChild(dock);
 }
 
 start();
