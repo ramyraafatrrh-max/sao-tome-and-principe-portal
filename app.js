@@ -1,11 +1,16 @@
 /* Static docs app for GitHub Pages (hash routing).
-   Supports optional structured tables via node.table = { columns:[], rows:[[]] }.
-   If node.table exists, ONLY the table is rendered.
+   - Renders chapters from data/chapterX.json
+   - Renders structured tables when node.table exists
+   - Book Your Trip UI (optional)
+   - Icons layout:
+       icon-1: top bar right
+       icon-2, icon-3 (and optional icon-4): after chapter tabs
 
-   Book Your Trip:
-   - Book Flights opens Skyscanner in a NEW tab
-   - Book Hotels opens Booking.com in a NEW tab and also offers Tripadvisor (NEW tab)
-   - Trip panel auto-collapses when navigating to a different chapter
+   Required assets:
+     assets/icons/icon-1.png
+     assets/icons/icon-2.png
+     assets/icons/icon-3.png
+     assets/icons/icon-4.png (optional)
 */
 
 const EMBEDDED_CHAPTERS = [
@@ -42,7 +47,7 @@ const el = {
   content: document.getElementById('content'),
   refs: document.getElementById('refs'),
 
-  // Book Your Trip UI (optional DOM)
+  // Book Your Trip (optional IDs in HTML)
   bookTripBtn: document.getElementById('bookTripBtn'),
   bookTripActions: document.getElementById('bookTripActions'),
   bookFlightsBtn: document.getElementById('bookFlightsBtn'),
@@ -145,7 +150,7 @@ function renderTabs(container, tabs, activeHref){
     btn.innerHTML = `<div class="tab__top">${escapeHtml(t.top)}</div>${t.sub ? `<div class="tab__sub">${escapeHtml(t.sub)}</div>` : ''}`;
 
     btn.addEventListener('click', () => {
-      // Auto-close trip UI when user clicks a CHAPTER tab
+      // Auto-close trip UI when user switches chapters
       if (container === el.chapterTabs) closeTripUI();
       location.hash = t.href;
     });
@@ -210,7 +215,62 @@ function findSub(section, subSlug){
   return (section?.subsections || []).find(s => s.slug === subSlug);
 }
 
-// --- Book Your Trip actions ---
+// ---- Icons placement ----
+function ensureTopIcon(){
+  // Insert icon-1 (and icon-4 if present) into banner top bar.
+  const bannerInner = document.querySelector('.banner__inner');
+  if (!bannerInner) return;
+
+  let box = document.querySelector('.topBarIcons');
+  if (!box){
+    box = document.createElement('div');
+    box.className = 'topBarIcons';
+    bannerInner.appendChild(box);
+  }
+
+  // Clear + rebuild
+  box.innerHTML = '';
+
+  const img1 = document.createElement('img');
+  img1.src = 'assets/icons/icon-1.png';
+  img1.alt = 'Icon 1';
+  box.appendChild(img1);
+
+  // Optional icon-4: if it exists, it will load; if missing, browser will show broken icon.
+  // To avoid broken icon, we attach and hide on error.
+  const img4 = document.createElement('img');
+  img4.src = 'assets/icons/icon-4.png';
+  img4.alt = 'Icon 4';
+  img4.onerror = () => { img4.remove(); };
+  box.appendChild(img4);
+}
+
+function ensureBottomIcons(){
+  // Insert icon-2 and icon-3 (and optional icon-4 if you prefer) after chapter tabs.
+  if (!el.chapterTabs) return;
+
+  let dock = document.getElementById('bottomIcons');
+  if (!dock){
+    dock = document.createElement('div');
+    dock.id = 'bottomIcons';
+    dock.className = 'bottomIcons';
+    el.chapterTabs.insertAdjacentElement('afterend', dock);
+  }
+
+  dock.innerHTML = '';
+
+  const img2 = document.createElement('img');
+  img2.src = 'assets/icons/icon-2.png';
+  img2.alt = 'Icon 2';
+  dock.appendChild(img2);
+
+  const img3 = document.createElement('img');
+  img3.src = 'assets/icons/icon-3.png';
+  img3.alt = 'Icon 3';
+  dock.appendChild(img3);
+}
+
+// --- Book Your Trip actions (kept simple, opens new tabs) ---
 function openSkyscannerFlights(){
   window.open('https://www.skyscanner.com/routes/cai/tms/cairo-to-sao-tome-is.html', '_blank', 'noopener,noreferrer');
 }
@@ -220,33 +280,26 @@ function showHotelsMenu(){
     <div class="widgetBox">
       <h3 style="margin-top:0">Hotels & Reviews</h3>
       <div class="tripActions" style="margin-top:10px">
-        <button class="btnPrimary" id="openBookingHotels" type="button">Booking.com</button>
-        <button class="btnSecondary" id="openTripadvisor" type="button">Tripadvisor</button>
+        <button class="btnPrimary" id="openBookingHotels" type="button">Open Booking.com</button>
+        <button class="btnSecondary" id="openTripadvisor" type="button">Open Tripadvisor</button>
       </div>
-      <p class="muted" style="margin:10px 0 0">These open in new tabs so the portal stays open.</p>
+      <p class="muted" style="margin:10px 0 0">Opens in new tabs so the portal stays open.</p>
     </div>
   `);
 
-  const bookingBtn = document.getElementById('openBookingHotels');
-  const tripBtn = document.getElementById('openTripadvisor');
+  document.getElementById('openBookingHotels')?.addEventListener('click', () => {
+    window.open('https://www.booking.com/searchresults.en-gb.html?ss=Sao%20Tome&group_adults=2&no_rooms=1', '_blank', 'noopener,noreferrer');
+  });
 
-  if (bookingBtn){
-    bookingBtn.addEventListener('click', () => {
-      window.open('https://www.booking.com/searchresults.en-gb.html?ss=Sao%20Tome&group_adults=2&no_rooms=1', '_blank', 'noopener,noreferrer');
-    });
-  }
-
-  if (tripBtn){
-    tripBtn.addEventListener('click', () => {
-      window.open('https://www.tripadvisor.com/Tourism-g294442-Sao_Tome_Sao_Tome_Island-Vacations.html', '_blank', 'noopener,noreferrer');
-    });
-  }
+  document.getElementById('openTripadvisor')?.addEventListener('click', () => {
+    window.open('https://www.tripadvisor.com/Tourism-g294442-Sao_Tome_Sao_Tome_Island-Vacations.html', '_blank', 'noopener,noreferrer');
+  });
 }
 
 async function render(){
   const r = parseHash();
 
-  // Close Book Trip UI automatically when chapter changes via back/forward, etc.
+  // Close Book Trip UI automatically when chapter changes via back/forward
   if (r.chapter !== lastChapterForTripUI){
     closeTripUI();
     lastChapterForTripUI = r.chapter;
@@ -344,8 +397,13 @@ async function render(){
 async function start(){
   if (el.countryName) el.countryName.textContent = state.index.country.name;
   if (el.flagImg) el.flagImg.src = state.index.country.flag;
+
+  // Ensure icons are present
+  ensureTopIcon();
+  ensureBottomIcons();
+
   await loadGeneratedAt();
-ensureIconDock();
+
   // Book Your Trip handlers
   if (el.bookTripBtn && el.bookTripActions){
     el.bookTripBtn.addEventListener('click', () => {
@@ -366,25 +424,15 @@ ensureIconDock();
     });
   }
 
-  window.addEventListener('hashchange', () => render());
+  window.addEventListener('hashchange', () => {
+    // close UI and make sure bottom icons remain after any render
+    render();
+    ensureBottomIcons();
+    ensureTopIcon();
+  });
+
   if (!location.hash) location.hash = '#/';
   await render();
-}
-function ensureIconDock(){
-  const existing = document.getElementById('iconDock');
-  if (existing) return;
-
-  const dock = document.createElement('div');
-  dock.id = 'iconDock';
-  dock.className = 'iconDock';
-
-  dock.innerHTML = `
-    <img src="assets/icons/icon-1.png" alt="">
-    <img src="assets/icons/icon-2.png" alt="">
-    <img src="assets/icons/icon-3.png" alt="">
-  `;
-
-  document.body.appendChild(dock);
 }
 
 start();
