@@ -1,95 +1,371 @@
+/* Static docs app for GitHub Pages (hash routing).
+   - Loads chapters from data/chapterX.json
+   - Renders structured tables when node.table exists (table-only for those nodes)
+   - Book Your Trip UI (if present in index.html)
+   - Auto-collapses Book Your Trip panel when switching chapters
+*/
 
-:root{
-  --bg:#05060a;
-  --panel:rgba(255,255,255,.06);
-  --panel2:rgba(255,255,255,.04);
-  --border:rgba(255,255,255,.10);
-  --text:rgba(255,255,255,.92);
-  --muted:rgba(255,255,255,.62);
-  --muted2:rgba(255,255,255,.45);
-  --emerald:#32f3c0;
-  --gold:#ffe08a;
-  --shadow: 0 10px 30px rgba(0,0,0,.38);
-  --shadow2: 0 6px 18px rgba(0,0,0,.22);
-  --radius: 20px;
-  --radius2: 16px;
+const EMBEDDED_CHAPTERS = [
+  {"number": 1, "title": "Overview"},
+  {"number": 2, "title": "PESTEL"},
+  {"number": 3, "title": "Country Segmentation"},
+  {"number": 4, "title": "Religious Overview"},
+  {"number": 5, "title": "SWOT Analysis"},
+  {"number": 6, "title": "Stakeholders Mapping"},
+  {"number": 7, "title": "Biblical and Spiritual Mapping"},
+  {"number": 8, "title": "Country Entry"},
+  {"number": 9, "title": "Problems / Challenges"}
+];
+
+const state = {
+  index: {
+    country: { name: 'São Tomé and Príncipe', flag: 'assets/flag-stp.svg' },
+    chapters: EMBEDDED_CHAPTERS,
+    generatedAt: ''
+  },
+  chapter: null
+};
+
+const el = {
+  countryName: document.getElementById('countryName'),
+  flagImg: document.getElementById('flagImg'),
+  generatedAt: document.getElementById('generatedAt'),
+  viewTitle: document.getElementById('viewTitle'),
+  viewSubtitle: document.getElementById('viewSubtitle'),
+  breadcrumbs: document.getElementById('breadcrumbs'),
+  chapterTabs: document.getElementById('chapterTabs'),
+  sectionTabs: document.getElementById('sectionTabs'),
+  subsectionTabs: document.getElementById('subsectionTabs'),
+  content: document.getElementById('content'),
+  refs: document.getElementById('refs'),
+
+  // Book Your Trip UI (optional; only works if these IDs exist in index.html)
+  bookTripBtn: document.getElementById('bookTripBtn'),
+  bookTripActions: document.getElementById('bookTripActions'),
+  bookFlightsBtn: document.getElementById('bookFlightsBtn'),
+  bookHotelsBtn: document.getElementById('bookHotelsBtn'),
+  tripEmbed: document.getElementById('tripEmbed')
+};
+
+let lastChapterForTripUI = null;
+
+function escapeHtml(str){
+  return String(str ?? '')
+    .replaceAll('&', '&amp;')
+    .replaceAll('<', '&lt;')
+    .replaceAll('>', '&gt;')
+    .replaceAll('"', '&quot;')
+    .replaceAll("'", '&#39;');
 }
-*{box-sizing:border-box}
-html,body{height:100%}
-body{
-  margin:0;
-  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
-  background: radial-gradient(1200px 700px at 15% 5%, rgba(50,243,192,.12), transparent 55%),
-              radial-gradient(1000px 600px at 85% 10%, rgba(255,224,138,.10), transparent 50%),
-              var(--bg);
-  color:var(--text);
+
+function linkify(text){
+  const urlRegex = /(https?:\/\/[^\s)\]]+)/g;
+  return escapeHtml(text).replace(urlRegex, (m) => `<a href="${m}" target="_blank" rel="noreferrer">${m}</a>`);
 }
 
-.banner{position:relative;overflow:hidden;border-bottom:1px solid rgba(255,255,255,.08);background:linear-gradient(to bottom, rgba(255,255,255,.08), transparent)}
-.banner__glow{position:absolute;filter:blur(58px);opacity:.7}
-.banner__glow--a{width:420px;height:420px;right:-140px;top:-180px;background:rgba(50,243,192,.16)}
-.banner__glow--b{width:520px;height:520px;left:-220px;bottom:-260px;background:rgba(255,224,138,.12)}
-.banner__inner{position:relative;max-width:1100px;margin:0 auto;padding:42px 22px;display:flex;align-items:center;gap:18px}
-.flag{width:86px;height:64px;border-radius:18px;padding:10px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.10);box-shadow:var(--shadow)}
-.flag img{width:100%;height:100%;object-fit:contain;display:block}
-.eyebrow{font-size:11px;letter-spacing:.35em;text-transform:uppercase;color:var(--muted2)}
-.banner h1{margin:8px 0 0;font-size:34px;letter-spacing:-.02em}
-
-.container{max-width:1100px;margin:0 auto;padding:18px 22px 48px}
-.panel{margin-top:18px;background:linear-gradient(to bottom, var(--panel), var(--panel2));border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow2);padding:18px}
-.panel__head{display:flex;justify-content:space-between;align-items:flex-start;gap:16px}
-.panel__head h2{margin:0;font-size:18px;letter-spacing:-.01em}
-.muted{margin:6px 0 0;color:var(--muted);font-size:13px}
-.crumbs{font-size:12px;color:var(--muted2);text-align:right;max-width:45%}
-.crumbs a{color:rgba(255,255,255,.72);text-decoration:none}
-.crumbs a:hover{text-decoration:underline}
-
-/* Center chapter/section/subsection tabs */
-.tabs{margin-top:14px;display:flex;flex-wrap:wrap;gap:10px;padding:10px;border-radius:var(--radius2);border:1px solid rgba(255,255,255,.10);background:rgba(255,255,255,.04);backdrop-filter:blur(6px);justify-content:center}
-.tabs--secondary{margin-top:10px}
-.tab{position:relative;display:flex;flex-direction:column;gap:2px;padding:10px 14px;border-radius:14px;border:1px solid transparent;background:transparent;color:rgba(255,255,255,.85);cursor:pointer;transition:transform .12s ease, background .15s ease, border-color .15s ease}
-.tab:hover{transform:translateY(-1px);background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.09)}
-.tab__top{font-weight:650;font-size:13px}
-.tab__sub{font-size:11px;color:var(--muted2)}
-.tab--active{background:rgba(255,255,255,.085);border-color:rgba(255,255,255,.14);box-shadow:var(--shadow)}
-.tab--active::after{content:"";position:absolute;left:14px;right:14px;bottom:-2px;height:2px;border-radius:999px;background:linear-gradient(90deg,var(--emerald),var(--gold),var(--emerald))}
-
-.content{margin-top:16px;padding:18px;border-radius:var(--radius);border:1px solid rgba(255,255,255,.10);background:rgba(255,255,255,.03);line-height:1.75;font-size:14px;color:rgba(255,255,255,.88)}
-.content h3{margin:18px 0 8px}
-.content a{color:var(--emerald)}
-
-.refs{margin-top:16px}
-.refs h3{margin:0 0 10px;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:rgba(255,255,255,.75)}
-
-.table{width:100%;border-collapse:collapse;overflow:hidden;border-radius:var(--radius2);border:1px solid rgba(255,255,255,.10);background:rgba(255,255,255,.03)}
-.table th,.table td{padding:10px 12px;border-top:1px solid rgba(255,255,255,.08);vertical-align:top}
-.table thead th{border-top:none;background:rgba(255,255,255,.04);font-size:12px;color:rgba(255,255,255,.72);text-align:left}
-.table td{font-size:13px;color:rgba(255,255,255,.84)}
-.table a{color:rgba(50,243,192,.95);word-break:break-all}
-
-.dataTable{width:100%;border-collapse:collapse;overflow:hidden;border-radius:var(--radius2);border:1px solid rgba(255,255,255,.10);background:rgba(255,255,255,.03)}
-.dataTable th,.dataTable td{padding:10px 12px;border-top:1px solid rgba(255,255,255,.08);vertical-align:top}
-.dataTable thead th{border-top:none;background:rgba(255,255,255,.05);font-size:12px;color:rgba(255,255,255,.72);text-align:left}
-.dataTable td{font-size:13px;color:rgba(255,255,255,.88)}
-.dataTable a{color:rgba(50,243,192,.95);word-break:break-word}
-
-.footer{margin-top:14px;font-size:12px;color:var(--muted2);display:flex;gap:10px;align-items:center}
-.noscript{margin-top:16px;padding:12px 14px;border-radius:14px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.05);color:rgba(255,255,255,.75);font-size:13px}
-
-.hidden{display:none !important;}
-
-/* Book-your-trip UI */
-.tripBar{display:flex;flex-direction:column;gap:10px;margin-top:12px}
-.tripActions{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
-.tripEmbed{margin-top:14px;padding:14px;border-radius:16px;border:1px solid rgba(255,255,255,.10);background:rgba(255,255,255,.03)}
-.btnPrimary{background: rgba(50,243,192,.16);border:1px solid rgba(50,243,192,.35);color: rgba(255,255,255,.92);border-radius:14px;padding:10px 14px;cursor:pointer;font-weight:650}
-.btnPrimary:hover{background: rgba(50,243,192,.22)}
-.btnSecondary{background: rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);color: rgba(255,255,255,.88);border-radius:14px;padding:10px 14px;cursor:pointer;font-weight:600}
-.btnSecondary:hover{background: rgba(255,255,255,.09)}
-.tripEmbed .widgetBox{width:100%;min-height: 180px}
-
-@media (max-width:720px){
-  .panel__head{flex-direction:column}
-  .crumbs{text-align:left;max-width:100%}
-  .banner h1{font-size:28px}
+function closeTripUI(){
+  if (el.bookTripActions) el.bookTripActions.classList.add('hidden');
+  if (el.tripEmbed){
+    el.tripEmbed.innerHTML = '';
+    el.tripEmbed.classList.add('hidden');
+  }
 }
+
+function showTripEmbed(html){
+  if (!el.tripEmbed) return;
+  el.tripEmbed.innerHTML = html;
+  el.tripEmbed.classList.remove('hidden');
+}
+
+// --- Book Your Trip (opens new tabs) ---
+function openSkyscannerFlights(){
+  window.open('https://www.skyscanner.com/routes/cai/tms/cairo-to-sao-tome-is.html', '_blank', 'noopener,noreferrer');
+}
+
+function showHotelsMenu(){
+  showTripEmbed(`
+    <div class="widgetBox">
+      <h3 style="margin-top:0">Hotels & Reviews</h3>
+      <div class="tripActions" style="margin-top:10px">
+        <button class="btnPrimary" id="openBookingHotels" type="button">Open Booking.com</button>
+        <button class="btnSecondary" id="openTripadvisor" type="button">Open Tripadvisor</button>
+      </div>
+      <p class="muted" style="margin:10px 0 0">Opens in new tabs so the portal stays open.</p>
+    </div>
+  `);
+
+  document.getElementById('openBookingHotels')?.addEventListener('click', () => {
+    window.open('https://www.booking.com/searchresults.en-gb.html?ss=Sao%20Tome&group_adults=2&no_rooms=1', '_blank', 'noopener,noreferrer');
+  });
+
+  document.getElementById('openTripadvisor')?.addEventListener('click', () => {
+    window.open('https://www.tripadvisor.com/Tourism-g294442-Sao_Tome_Sao_Tome_Island-Vacations.html', '_blank', 'noopener,noreferrer');
+  });
+}
+
+function parseHash(){
+  const h = (location.hash || '').replace(/^#\/?/, '');
+  const parts = h.split('/').filter(Boolean);
+  const route = { chapter: null, section: null, sub: null };
+  for (let i=0;i<parts.length;i++){
+    if (parts[i]==='chapter' && parts[i+1]) route.chapter = Number(parts[i+1]);
+    if (parts[i]==='section' && parts[i+1]) route.section = parts[i+1];
+    if (parts[i]==='sub' && parts[i+1]) route.sub = parts[i+1];
+  }
+  return route;
+}
+
+async function loadGeneratedAt(){
+  try{
+    const res = await fetch('data/index.json', { cache: 'no-store' });
+    if (res.ok){
+      const v = await res.json();
+      if (v?.generatedAt){
+        state.index.generatedAt = v.generatedAt;
+        if (el.generatedAt) el.generatedAt.textContent = `Generated: ${v.generatedAt}`;
+      }
+    }
+  } catch(e) {}
+}
+
+async function loadChapter(chapterNumber){
+  if (!chapterNumber){ state.chapter = null; return; }
+  try{
+    const res = await fetch(`data/chapter${chapterNumber}.json`, { cache: 'no-store' });
+    if (!res.ok) throw new Error(`Could not load chapter ${chapterNumber}`);
+    state.chapter = await res.json();
+  } catch(e){
+    console.error(e);
+    state.chapter = { number: chapterNumber, title: '', sections: [] };
+    if (el.content){
+      el.content.innerHTML = `<p class="muted">Chapter data could not be loaded. Make sure the <code>data/</code> folder exists in GitHub Pages.</p>`;
+    }
+    if (el.refs) el.refs.innerHTML = '';
+  }
+}
+
+function crumbs(items){
+  if (!el.breadcrumbs) return;
+  el.breadcrumbs.innerHTML = items.map((it, idx) => {
+    const last = idx === items.length - 1;
+    if (last) return `<span>${escapeHtml(it.label)}</span>`;
+    return `<a href="${it.href}">${escapeHtml(it.label)}</a> <span style="opacity:.5">/</span> `;
+  }).join('');
+}
+
+function renderTabs(container, tabs, activeHref){
+  if (!container) return;
+  container.innerHTML = '';
+
+  if (!tabs || !tabs.length){
+    container.style.display = 'none';
+    return;
+  }
+
+  container.style.display = 'flex';
+
+  for (const t of tabs){
+    const btn = document.createElement('button');
+    btn.className = 'tab' + (t.href === activeHref ? ' tab--active' : '');
+    btn.type = 'button';
+    btn.innerHTML = `<div class="tab__top">${escapeHtml(t.top)}</div>${t.sub ? `<div class="tab__sub">${escapeHtml(t.sub)}</div>` : ''}`;
+
+    btn.addEventListener('click', () => {
+      // If user clicks a CHAPTER tab, close trip UI
+      if (container === el.chapterTabs) closeTripUI();
+      location.hash = t.href;
+    });
+
+    container.appendChild(btn);
+  }
+}
+
+function renderTextToHtml(text){
+  if (!text) return '';
+  const lines = String(text).split('\n');
+  return lines.map((ln) => {
+    if (ln.startsWith('### ')) return `<h3>${escapeHtml(ln.replace(/^###\s+/, ''))}</h3>`;
+    if (ln.startsWith('- ')) return `<div>• ${linkify(ln.slice(2))}</div>`;
+    if (ln.startsWith('• ')) return `<div>• ${linkify(ln.slice(2))}</div>`;
+    return ln.trim() ? `<p>${linkify(ln)}</p>` : '';
+  }).join('');
+}
+
+function renderContent(text){
+  if (!el.content) return;
+  if (!text){ el.content.innerHTML = ''; return; }
+  el.content.innerHTML = renderTextToHtml(text);
+}
+
+function renderRefs(links){
+  if (!el.refs) return;
+  if (!links || !links.length){ el.refs.innerHTML = ''; return; }
+  const rows = links.map((l,i) => `<tr><td>${i+1}</td><td><a href="${l}" target="_blank" rel="noreferrer">${l}</a></td></tr>`).join('');
+  el.refs.innerHTML = `<h3>References</h3><table class="table"><thead><tr><th style="width:70px">#</th><th>Link</th></tr></thead><tbody>${rows}</tbody></table>`;
+}
+
+function renderHtmlTable(table){
+  if (!table || !Array.isArray(table.columns) || !Array.isArray(table.rows)) return '';
+  const thead = `<thead><tr>${table.columns.map(c => `<th>${escapeHtml(c)}</th>`).join('')}</tr></thead>`;
+  const tbody = `<tbody>${table.rows.map(row => {
+    const tds = (row || []).map(cell => `<td>${linkify(String(cell ?? ''))}</td>`).join('');
+    return `<tr>${tds}</tr>`;
+  }).join('')}</tbody>`;
+  return `<table class="dataTable">${thead}${tbody}</table>`;
+}
+
+function renderNode(node){
+  if (!node){
+    if (el.content) el.content.innerHTML = '';
+    if (el.refs) el.refs.innerHTML = '';
+    return;
+  }
+
+  // If a structured table exists, render ONLY the table
+  if (node.table){
+    if (el.content) el.content.innerHTML = renderHtmlTable(node.table);
+  } else {
+    renderContent(node.content);
+  }
+
+  renderRefs(node.references || []);
+}
+
+function findSection(chapter, sectionSlug){
+  return (chapter?.sections || []).find(s => s.slug === sectionSlug);
+}
+
+function findSub(section, subSlug){
+  return (section?.subsections || []).find(s => s.slug === subSlug);
+}
+
+async function render(){
+  const r = parseHash();
+
+  // Auto-close trip UI when chapter changes via back/forward
+  if (r.chapter !== lastChapterForTripUI){
+    closeTripUI();
+    lastChapterForTripUI = r.chapter;
+  }
+
+  const chapterTabs = (state.index.chapters || []).map(c => ({
+    top: `Chapter ${c.number}`,
+    sub: c.title,
+    href: `#/chapter/${c.number}`
+  }));
+
+  renderTabs(el.chapterTabs, chapterTabs, r.chapter ? `#/chapter/${r.chapter}` : null);
+
+  if (!r.chapter){
+    if (el.viewTitle) el.viewTitle.textContent = 'Chapters';
+    if (el.viewSubtitle) el.viewSubtitle.textContent = '';
+    crumbs([{label:'Home', href:'#/'}]);
+    if (el.sectionTabs) el.sectionTabs.style.display = 'none';
+    if (el.subsectionTabs) el.subsectionTabs.style.display = 'none';
+    if (el.content) el.content.innerHTML = '';
+    if (el.refs) el.refs.innerHTML = '';
+    return;
+  }
+
+  await loadChapter(r.chapter);
+
+  const chMeta = (state.index.chapters || []).find(c => c.number === r.chapter);
+  const secTabs = (state.chapter.sections || []).map(s => ({
+    top: s.number,
+    sub: s.title,
+    href: `#/chapter/${r.chapter}/section/${s.slug}`
+  }));
+
+  if (!r.section){
+    if (el.viewTitle) el.viewTitle.textContent = `Chapter ${r.chapter}: ${chMeta?.title || ''}`;
+    if (el.viewSubtitle) el.viewSubtitle.textContent = '';
+    crumbs([{label:'Home', href:'#/'},{label:`Chapter ${r.chapter}`, href:`#/chapter/${r.chapter}`}]);
+    renderTabs(el.sectionTabs, secTabs, null);
+    if (el.subsectionTabs) el.subsectionTabs.style.display = 'none';
+
+    const sum = state.chapter.sections?.[0];
+    if (sum && String(sum.number).endsWith('.0')) renderNode(sum);
+    else renderNode(null);
+    return;
+  }
+
+  const sec = findSection(state.chapter, r.section);
+  if (!sec){
+    location.hash = `#/chapter/${r.chapter}`;
+    return;
+  }
+
+  if ((sec.subsections || []).length && !r.sub){
+    location.hash = `#/chapter/${r.chapter}/section/${sec.slug}/sub/${sec.subsections[0].slug}`;
+    return;
+  }
+
+  if (el.viewTitle) el.viewTitle.textContent = `${sec.number} — ${sec.title}`;
+  if (el.viewSubtitle) el.viewSubtitle.textContent = '';
+  crumbs([{label:'Home', href:'#/'},{label:`Chapter ${r.chapter}`, href:`#/chapter/${r.chapter}`},{label:sec.number, href:`#/chapter/${r.chapter}/section/${sec.slug}` }]);
+
+  renderTabs(el.sectionTabs, secTabs, `#/chapter/${r.chapter}/section/${sec.slug}`);
+
+  const subTabs = (sec.subsections || []).map(s => ({
+    top: s.number,
+    sub: s.title,
+    href: `#/chapter/${r.chapter}/section/${sec.slug}/sub/${s.slug}`
+  }));
+
+  if (!subTabs.length){
+    if (el.subsectionTabs) el.subsectionTabs.style.display = 'none';
+    renderNode(sec);
+    return;
+  }
+
+  renderTabs(el.subsectionTabs, subTabs, `#/chapter/${r.chapter}/section/${sec.slug}/sub/${r.sub}`);
+
+  const sub = findSub(sec, r.sub);
+  if (!sub){
+    location.hash = `#/chapter/${r.chapter}/section/${sec.slug}/sub/${sec.subsections[0].slug}`;
+    return;
+  }
+
+  if (el.viewTitle) el.viewTitle.textContent = `${sub.number} — ${sub.title}`;
+  crumbs([
+    {label:'Home', href:'#/'},
+    {label:`Chapter ${r.chapter}`, href:`#/chapter/${r.chapter}`},
+    {label:sec.number, href:`#/chapter/${r.chapter}/section/${sec.slug}`},
+    {label:sub.number, href:`#/chapter/${r.chapter}/section/${sec.slug}/sub/${sub.slug}`}
+  ]);
+
+  renderNode(sub);
+}
+
+async function start(){
+  if (el.countryName) el.countryName.textContent = state.index.country.name;
+  if (el.flagImg) el.flagImg.src = state.index.country.flag;
+
+  await loadGeneratedAt();
+
+  // Book Your Trip handlers
+  if (el.bookTripBtn && el.bookTripActions){
+    el.bookTripBtn.addEventListener('click', () => {
+      el.bookTripActions.classList.toggle('hidden');
+      if (el.bookTripActions.classList.contains('hidden')) closeTripUI();
+    });
+  }
+
+  if (el.bookFlightsBtn){
+    el.bookFlightsBtn.addEventListener('click', () => {
+      openSkyscannerFlights();
+    });
+  }
+
+  if (el.bookHotelsBtn){
+    el.bookHotelsBtn.addEventListener('click', () => {
+      showHotelsMenu();
+    });
+  }
+
+  window.addEventListener('hashchange', () => render());
+  if (!location.hash) location.hash = '#/';
+  await render();
+}
+
+start();
