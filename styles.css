@@ -153,3 +153,37 @@ body{
   border:0;
   border-radius:14px;
 }
+
+/* Persistent icon dock */
+.iconDock{
+  position:fixed;
+  top:14px;
+  right:14px;
+  z-index:9999;
+  display:flex;
+  gap:10px;
+  padding:10px;
+  border-radius:16px;
+  border:1px solid rgba(255,255,255,.12);
+  background:rgba(0,0,0,.35);
+  backdrop-filter: blur(6px);
+}
+
+.iconDock img{
+  width:44px;
+  height:44px;
+  object-fit:contain;
+  border-radius:12px;
+  background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.10);
+}
+
+@media (max-width:720px){
+  .iconDock{
+    top:auto;
+    bottom:14px;
+    right:14px;
+    left:14px;
+    justify-content:center;
+  }
+}
