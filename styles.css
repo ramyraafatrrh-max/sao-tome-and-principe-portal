@@ -1,0 +1,112 @@
+
+:root{
+  --bg:#05060a;
+  --panel:rgba(255,255,255,.06);
+  --panel2:rgba(255,255,255,.04);
+  --border:rgba(255,255,255,.10);
+  --text:rgba(255,255,255,.92);
+  --muted:rgba(255,255,255,.62);
+  --muted2:rgba(255,255,255,.45);
+  --emerald:#32f3c0;
+  --gold:#ffe08a;
+  --shadow: 0 10px 30px rgba(0,0,0,.38);
+  --shadow2: 0 6px 18px rgba(0,0,0,.22);
+  --radius: 20px;
+  --radius2: 16px;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+  background: radial-gradient(1200px 700px at 15% 5%, rgba(50,243,192,.12), transparent 55%),
+              radial-gradient(1000px 600px at 85% 10%, rgba(255,224,138,.10), transparent 50%),
+              var(--bg);
+  color:var(--text);
+}
+
+.banner{position:relative;overflow:hidden;border-bottom:1px solid rgba(255,255,255,.08);background:linear-gradient(to bottom, rgba(255,255,255,.08), transparent)}
+.banner__glow{position:absolute;filter:blur(58px);opacity:.7}
+.banner__glow--a{width:420px;height:420px;right:-140px;top:-180px;background:rgba(50,243,192,.16)}
+.banner__glow--b{width:520px;height:520px;left:-220px;bottom:-260px;background:rgba(255,224,138,.12)}
+.banner__inner{position:relative;max-width:1100px;margin:0 auto;padding:42px 22px;display:flex;align-items:center;gap:18px}
+.flag{width:86px;height:64px;border-radius:18px;padding:10px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.10);box-shadow:var(--shadow)}
+.flag img{width:100%;height:100%;object-fit:contain;display:block}
+.eyebrow{font-size:11px;letter-spacing:.35em;text-transform:uppercase;color:var(--muted2)}
+.banner h1{margin:8px 0 0;font-size:34px;letter-spacing:-.02em}
+
+.container{max-width:1100px;margin:0 auto;padding:18px 22px 48px}
+.panel{margin-top:18px;background:linear-gradient(to bottom, var(--panel), var(--panel2));border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow2);padding:18px}
+.panel__head{display:flex;justify-content:space-between;align-items:flex-start;gap:16px}
+.panel__head h2{margin:0;font-size:18px;letter-spacing:-.01em}
+.muted{margin:6px 0 0;color:var(--muted);font-size:13px}
+.smallNote{font-size:12px;margin-top:10px}
+.centerTitle{text-align:center;margin:0;font-size:22px;letter-spacing:-.02em}
+.centerText{text-align:center}
+.crumbs{font-size:12px;color:var(--muted2);text-align:right;max-width:45%}
+.crumbs a{color:rgba(255,255,255,.72);text-decoration:none}
+.crumbs a:hover{text-decoration:underline}
+
+/* centered tabs */
+.tabs{margin-top:14px;display:flex;flex-wrap:wrap;gap:10px;padding:10px;border-radius:var(--radius2);border:1px solid rgba(255,255,255,.10);background:rgba(255,255,255,.04);backdrop-filter:blur(6px);justify-content:center}
+.tabs--secondary{margin-top:10px}
+.tab{position:relative;display:flex;flex-direction:column;gap:2px;padding:10px 14px;border-radius:14px;border:1px solid transparent;background:transparent;color:rgba(255,255,255,.85);cursor:pointer;transition:transform .12s ease, background .15s ease, border-color .15s ease}
+.tab:hover{transform:translateY(-1px);background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.09)}
+.tab__top{font-weight:650;font-size:13px}
+.tab__sub{font-size:11px;color:var(--muted2)}
+.tab--active{background:rgba(255,255,255,.085);border-color:rgba(255,255,255,.14);box-shadow:var(--shadow)}
+.tab--active::after{content:"";position:absolute;left:14px;right:14px;bottom:-2px;height:2px;border-radius:999px;background:linear-gradient(90deg,var(--emerald),var(--gold),var(--emerald))}
+
+.content{margin-top:16px;padding:18px;border-radius:var(--radius);border:1px solid rgba(255,255,255,.10);background:rgba(255,255,255,.03);line-height:1.75;font-size:14px;color:rgba(255,255,255,.88)}
+.content h3{margin:18px 0 8px}
+.content a{color:var(--emerald)}
+.refs{margin-top:16px}
+.refs h3{margin:0 0 10px;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:rgba(255,255,255,.75)}
+.table{width:100%;border-collapse:collapse;overflow:hidden;border-radius:var(--radius2);border:1px solid rgba(255,255,255,.10);background:rgba(255,255,255,.03)}
+.table th,.table td{padding:10px 12px;border-top:1px solid rgba(255,255,255,.08);vertical-align:top}
+.table thead th{border-top:none;background:rgba(255,255,255,.04);font-size:12px;color:rgba(255,255,255,.72);text-align:left}
+.table td{font-size:13px;color:rgba(255,255,255,.84)}
+.table a{color:rgba(50,243,192,.95);word-break:break-all}
+.dataTable{width:100%;border-collapse:collapse;overflow:hidden;border-radius:var(--radius2);border:1px solid rgba(255,255,255,.10);background:rgba(255,255,255,.03)}
+.dataTable th,.dataTable td{padding:10px 12px;border-top:1px solid rgba(255,255,255,.08);vertical-align:top}
+.dataTable thead th{border-top:none;background:rgba(255,255,255,.05);font-size:12px;color:rgba(255,255,255,.72);text-align:left}
+.dataTable td{font-size:13px;color:rgba(255,255,255,.88)}
+.dataTable a{color:rgba(50,243,192,.95);word-break:break-word}
+.footer{margin-top:14px;font-size:12px;color:var(--muted2);display:flex;gap:10px;align-items:center;justify-content:center}
+.noscript{margin:16px;padding:12px 14px;border-radius:14px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.05);color:rgba(255,255,255,.75);font-size:13px}
+.hidden{display:none !important}
+
+/* Landing / visitor / login */
+.landingWrap,.loginWrap{display:flex;justify-content:center}
+.choicePanel,.loginPanel{width:min(900px,100%)}
+.mainChoiceGrid{display:grid;grid-template-columns:repeat(2,minmax(220px,1fr));gap:16px;margin-top:18px}
+.mainChoiceGrid.twoButtons{max-width:760px;margin-left:auto;margin-right:auto}
+.choiceCard{border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.055);color:var(--text);border-radius:22px;padding:24px;min-height:150px;cursor:pointer;text-align:left;box-shadow:var(--shadow2);transition:transform .14s ease, border-color .14s ease, background .14s ease}
+.choiceCard:hover{transform:translateY(-2px);border-color:rgba(50,243,192,.35);background:rgba(50,243,192,.08)}
+.choiceTitle{display:block;font-size:22px;font-weight:750;letter-spacing:-.02em;margin-bottom:8px}
+.choiceSub{display:block;color:var(--muted);font-size:13px;line-height:1.5}
+.backBtn{border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.06);color:var(--text);border-radius:12px;padding:8px 12px;cursor:pointer;margin-bottom:12px}
+.backBtn:hover{background:rgba(255,255,255,.09)}
+.loginForm{display:grid;gap:12px;margin-top:16px}
+.loginForm label{display:grid;gap:6px;color:rgba(255,255,255,.78);font-size:13px}
+.loginForm input{width:100%;padding:12px 14px;border-radius:14px;border:1px solid rgba(255,255,255,.14);background:rgba(0,0,0,.18);color:var(--text);outline:none}
+.loginForm input:focus{border-color:rgba(50,243,192,.45)}
+.eventEmpty{margin-top:14px;padding:20px;border-radius:18px;border:1px solid rgba(255,255,255,.10);background:rgba(255,255,255,.03);text-align:center}
+
+/* Book-your-trip UI */
+.tripBar{display:flex;flex-direction:column;gap:10px;margin-top:14px;align-items:center}
+.tripActions{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
+.tripEmbed{width:100%;margin-top:14px;padding:14px;border-radius:16px;border:1px solid rgba(255,255,255,.10);background:rgba(255,255,255,.03)}
+.btnPrimary{background:rgba(50,243,192,.16);border:1px solid rgba(50,243,192,.35);color:rgba(255,255,255,.92);border-radius:14px;padding:10px 14px;cursor:pointer;font-weight:650}
+.btnPrimary:hover{background:rgba(50,243,192,.22)}
+.btnSecondary,.btnGhost{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);color:rgba(255,255,255,.88);border-radius:14px;padding:10px 14px;cursor:pointer;font-weight:600}
+.btnSecondary:hover,.btnGhost:hover{background:rgba(255,255,255,.09)}
+.tripEmbed .widgetBox{width:100%;min-height:180px;text-align:center}
+
+@media (max-width:720px){
+  .panel__head{flex-direction:column}
+  .crumbs{text-align:left;max-width:100%}
+  .banner h1{font-size:28px}
+  .mainChoiceGrid{grid-template-columns:1fr}
+  .choiceCard{text-align:center}
+}
